@@ -16,6 +16,7 @@ export default function Work() {
           blurb="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
         veniam."
+          href="/work/two-cents"
         />
         <ProjectCard
           name="TattGPT"
@@ -23,6 +24,7 @@ export default function Work() {
           blurb="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
         veniam."
+          href="/work/tattgpt"
         />
         <ProjectCard
           name="Tip Tap Toe"
@@ -30,6 +32,7 @@ export default function Work() {
           blurb="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
         veniam."
+          href="/work/tip-tap-toe"
         />
         <ProjectCard
           name="Arbie Abroad"
@@ -37,6 +40,7 @@ export default function Work() {
           blurb="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
         veniam."
+          href="/work/arbie-abroad"
         />
       </section>
     </main>
