@@ -13,9 +13,6 @@ export default function Header() {
           <Link href="/about" className="nav-link">
             About
           </Link>
-          <Link href="/skills" className="nav-link">
-            Skills
-          </Link>
           <Link href="/work" className="nav-link">
             Work
           </Link>
