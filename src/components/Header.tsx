@@ -8,16 +8,16 @@ export default function Header() {
       <header className="flex flex-row justify-between items-center mt-[30px]">
         <Image src={face} height={50} alt="Cartoon of Rohan's face" />
         <nav className="flex flex-row gap-[50px]">
-          <Link href="" className="nav-link">
-            Bio
+          <Link href="/about" className="nav-link">
+            About
           </Link>
-          <Link href="" className="nav-link">
+          <Link href="/skills" className="nav-link">
             Skills
           </Link>
-          <Link href="" className="nav-link">
-            Projects
+          <Link href="/work" className="nav-link">
+            Work
           </Link>
-          <Link href="" className="nav-link">
+          <Link href="/contact" className="nav-link">
             Let’s kōrero
           </Link>
         </nav>
