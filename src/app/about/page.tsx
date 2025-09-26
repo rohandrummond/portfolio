@@ -8,7 +8,7 @@ import { ArrowRightIcon, PlusIcon } from '@radix-ui/react-icons'
 
 export default function About() {
   return (
-    <main className="flex-1 flex flex-col justify-center mt-30 gap-30">
+    <main className="flex flex-col mt-30 gap-30">
       {/* Bio */}
       <section className="w-[55vw]">
         <div className="flex flex-col mb-12 gap-4">
