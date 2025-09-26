@@ -1,6 +1,6 @@
 import { Separator } from '@/components/ui/separator'
+import { Button } from '@/components/ui/button'
 import { CopyIcon, ExternalLinkIcon } from '@radix-ui/react-icons'
-import { Link } from 'lucide-react'
 
 export default function Contact() {
   return (
@@ -12,33 +12,39 @@ export default function Contact() {
       <Separator />
       <section className="flex flex-col gap-4">
         <div className="flex flex-row justify-between">
-          <p className="body-text">Email</p>
-          <div className="flex f-row items-center gap-3">
-            <p className="body-text">Copy</p>
-            <CopyIcon />
-          </div>
+          <p className="body-large">Email</p>
+          <Button className="min-w-[100px] border" asChild>
+            <div className="flex f-row items-center gap-3">
+              <p className="body-text">Copy</p>
+              <CopyIcon />
+            </div>
+          </Button>
         </div>
         <div className="flex flex-row justify-between">
-          <p className="body-text">GitHub</p>
-          <a
-            href="https://github.com/rohandrummond"
-            target="_blank"
-            className="flex f-row items-center gap-3"
-          >
-            <p className="body-text">Visit</p>
-            <ExternalLinkIcon />
-          </a>
+          <p className="body-large">GitHub</p>
+          <Button className="min-w-[100px] border" asChild>
+            <a
+              href="https://github.com/rohandrummond"
+              target="_blank"
+              className="flex f-row items-center gap-3"
+            >
+              <p className="body-text">Visit</p>
+              <ExternalLinkIcon />
+            </a>
+          </Button>
         </div>
         <div className="flex flex-row justify-between">
-          <p className="body-text">LinkedIn</p>
-          <a
-            href="https://www.linkedin.com/in/drummondr/"
-            target="_blank"
-            className="flex f-row items-center gap-3"
-          >
-            <p className="body-text">Visit</p>
-            <ExternalLinkIcon />
-          </a>
+          <p className="body-large">LinkedIn</p>
+          <Button className="min-w-[100px] border" asChild>
+            <a
+              href="https://www.linkedin.com/in/drummondr/"
+              target="_blank"
+              className="flex f-row items-center gap-3"
+            >
+              <p className="body-text">Visit</p>
+              <ExternalLinkIcon />
+            </a>
+          </Button>
         </div>
       </section>
     </main>

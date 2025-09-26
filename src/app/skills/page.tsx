@@ -4,6 +4,15 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from '@/components/ui/accordion'
+import {
+  Card,
+  CardAction,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from '@/components/ui/card'
 
 export default function Skills() {
   return (
@@ -47,40 +56,63 @@ export default function Skills() {
           free and paid courses/certifications, and they’ve been a huge part of
           my growth as a developer.
         </h3>
-        <div className="flex flex-row justify-between gap-40">
-          <div className="flex flex-col lg:w-!/3 gap-4">
-            <h4 className="sub-heading">Dev Academy Aotearoa</h4>
-            <p className="body-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur.
-            </p>
-          </div>
-          <div className="flex flex-col lg:w-!/3 gap-4">
-            <h4 className="sub-heading">HarvardX CS50x</h4>
-            <p className="body-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur.
-            </p>
-          </div>
-          <div className="flex flex-col lg:w-!/3 gap-4">
-            <h4 className="sub-heading">AWS Cloud Practitioner</h4>
-            <p className="body-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur.
-            </p>
-          </div>
+        <div className="flex flex-row justify-between">
+          <Card className="flex flex-col lg:w-1/3 gap-4">
+            <CardHeader>
+              <CardDescription>
+                New Zealand Certificate in Applied Certified Development
+              </CardDescription>
+              <CardTitle className="sub-heading">
+                Dev Academy Aotearoa
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur.{' '}
+              </p>
+            </CardContent>
+          </Card>
+          <Card className="flex flex-col lg:w-1/3 gap-4">
+            <CardHeader>
+              <CardDescription>
+                Introduction to Computer Science
+              </CardDescription>
+              <CardTitle className="sub-heading">HarvardX CS50x</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur.{' '}
+              </p>
+            </CardContent>
+          </Card>
+          <Card className="flex flex-col lg:w-1/3 gap-4">
+            <CardHeader>
+              <CardDescription>Certified Cloud Practitioner</CardDescription>
+              <CardTitle className="sub-heading">
+                Amazon Web Services (AWS)
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur.{' '}
+              </p>
+            </CardContent>
+          </Card>
         </div>
       </section>
     </main>
