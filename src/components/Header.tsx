@@ -6,7 +6,9 @@ export default function Header() {
   return (
     <>
       <header className="flex flex-row justify-between items-center mt-[30px]">
-        <Image src={face} height={50} alt="Cartoon of Rohan's face" />
+        <Link href="/">
+          <Image src={face} height={50} alt="Cartoon of Rohan's face" />
+        </Link>
         <nav className="flex flex-row gap-[50px]">
           <Link href="/about" className="nav-link">
             About

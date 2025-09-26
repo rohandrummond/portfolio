@@ -6,6 +6,17 @@ import Footer from '@/components/Footer'
 
 export const neueMontreal = localFont({
   src: [
+    // Book 300
+    {
+      path: '../../public/fonts/PPNeueMontreal-Book.woff2',
+      weight: '300',
+      style: 'normal',
+    },
+    {
+      path: '../../public/fonts/PPNeueMontreal-Book.woff',
+      weight: '300',
+      style: 'normal',
+    },
     // Regular 400
     {
       path: '../../public/fonts/PPNeueMontreal-Regular.woff2',
