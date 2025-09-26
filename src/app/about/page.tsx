@@ -3,15 +3,15 @@ import Link from 'next/link'
 
 export default function About() {
   return (
-    <div className="flex-1 flex flex-col justify-center gap-[1rem] w-full max-w-[55vw] mx-auto">
-      <div className="flex flex-col">
+    <main className="flex-1 flex flex-col justify-center gap-[1rem] w-full max-w-[55vw] mx-auto">
+      <section className="flex flex-col">
         <h1 className="heading-lg">About me</h1>
         <h2 className="sub-heading">
           A short sentence that summarises who I am
         </h2>
-      </div>
+      </section>
       <Separator />
-      <div className="flex flex-col gap-[1rem]">
+      <section className="flex flex-col gap-[1rem]">
         <p className="body-text">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
@@ -46,7 +46,7 @@ export default function About() {
           </Link>{' '}
           I have built.
         </p>
-      </div>
-    </div>
+      </section>
+    </main>
   )
 }

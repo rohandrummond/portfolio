@@ -126,14 +126,21 @@ body {
 
 .heading-xl {
   font-size: clamp(7rem, 8vw, 14rem);
-  font-weight: 500;
+  font-weight: 400;
   line-height: 80%;
   letter-spacing: normal;
 }
 
 .heading-lg {
   font-size: 5rem;
-  font-weight: 500;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: normal;
+}
+
+.heading-md {
+  font-size: 3rem;
+  font-weight: 400;
   line-height: 100%;
   letter-spacing: normal;
 }
@@ -144,6 +151,12 @@ body {
   line-height: 90%;
   letter-spacing: normal;
 }
+
+.heading-tight {
+  line-height: 80%;
+}
+
+
 
 .nav-link {
   font-size: 1.25rem;
