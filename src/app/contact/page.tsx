@@ -29,18 +29,18 @@ export default function Contact() {
       </section>
       <Separator />
       <section className="flex flex-col gap-4">
-        <div className="flex flex-row justify-between">
+        <div className="flex flex-row justify-between items-center">
           <p className="body-large">Email</p>
           <TooltipProvider>
             <Tooltip open={open}>
               <TooltipTrigger asChild>
                 <Button
-                  className="min-w-[100px] border cursor-pointer"
+                  className="min-w-[100px] border py-5 cursor-pointer"
                   asChild
                   onClick={copyEmail}
                 >
                   <div className="flex f-row items-center gap-3">
-                    <p className="body-text">Copy</p>
+                    <p className="sub-text">Copy</p>
                     <CopyIcon />
                   </div>
                 </Button>
@@ -51,28 +51,28 @@ export default function Contact() {
             </Tooltip>
           </TooltipProvider>
         </div>
-        <div className="flex flex-row justify-between">
+        <div className="flex flex-row justify-between items-center">
           <p className="body-large">GitHub</p>
-          <Button className="min-w-[100px] border" asChild>
+          <Button className="min-w-[100px] border py-5" asChild>
             <a
               href="https://github.com/rohandrummond"
               target="_blank"
               className="flex f-row items-center gap-3"
             >
-              <p className="body-text">Visit</p>
+              <p className="sub-text">Visit</p>
               <ExternalLinkIcon />
             </a>
           </Button>
         </div>
-        <div className="flex flex-row justify-between">
+        <div className="flex flex-row justify-between items-center">
           <p className="body-large">LinkedIn</p>
-          <Button className="min-w-[100px] border" asChild>
+          <Button className="min-w-[100px] border py-5" asChild>
             <a
               href="https://www.linkedin.com/in/drummondr/"
               target="_blank"
               className="flex f-row items-center gap-3"
             >
-              <p className="body-text">Visit</p>
+              <p className="sub-text">Visit</p>
               <ExternalLinkIcon />
             </a>
           </Button>

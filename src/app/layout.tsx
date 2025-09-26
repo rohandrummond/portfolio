@@ -69,7 +69,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${neueMontreal.variable} flex flex-col container mx-auto min-h-screen xl:max-w-none xl:pr-[30px] xl:pl-[30px]`}
+        className={`${neueMontreal.variable} flex flex-col container mx-auto min-h-screen xl:max-w-none xl:pr-[40px] xl:pl-[40px]`}
       >
         <Header />
         {children}
