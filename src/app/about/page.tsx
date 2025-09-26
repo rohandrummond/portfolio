@@ -5,7 +5,7 @@ export default function About() {
   return (
     <main className="flex-1 flex flex-col justify-center gap-[1rem] w-full max-w-[55vw] mx-auto">
       <section className="flex flex-col">
-        <h1 className="heading-lg">About me</h1>
+        <h1 className="heading-lg">About me.</h1>
         <h2 className="sub-heading">
           A short sentence that summarises who I am
         </h2>
