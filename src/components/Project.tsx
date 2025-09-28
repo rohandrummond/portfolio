@@ -1,10 +1,13 @@
+'use client'
+
 import Image from 'next/image'
 import ProjectBadge from '@/components/ProjectBadge'
 import { Card } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { Separator } from '@/components/ui/separator'
-import { ExternalLinkIcon } from '@radix-ui/react-icons'
+import { ArrowUpIcon, ExternalLinkIcon } from '@radix-ui/react-icons'
 import placeholder from '@/../public/images/placeholder.png'
+import Link from 'next/link'
 
 export default function Project({
   name,
@@ -29,6 +32,13 @@ export default function Project({
   learnings: string
   features: string[]
 }) {
+  function scrollToTop() {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: 'smooth',
+    })
+  }
   return (
     <main className="flex flex-col mt-30 mb-30 gap-20">
       <section className="flex flex-col gap-8">
@@ -96,6 +106,20 @@ export default function Project({
         <Image src={placeholder} alt="" className="rounded-sm" />
         <Image src={placeholder} alt="" className="rounded-sm" />
         <Image src={placeholder} alt="" className="rounded-sm" />
+      </section>
+      <section className="flex flex-row justify-end gap-4">
+        <Button className="border" asChild>
+          <Link href="/about" className="sub-text">
+            About me
+          </Link>
+        </Button>
+        <Button
+          className="border gap-1 sub-text"
+          variant="outline"
+          onClick={scrollToTop}
+        >
+          Back to top<ArrowUpIcon></ArrowUpIcon>
+        </Button>
       </section>
     </main>
   )

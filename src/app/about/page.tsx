@@ -1,14 +1,25 @@
+'use client'
+
+import Link from 'next/link'
 import EducationCard from '@/components/EducationCard'
 import ExperienceCard from '@/components/ExperienceCard'
 import SkillsAccordion from '@/components/SkillsAccordion'
+import { Button } from '@/components/ui/button'
 import { Accordion, AccordionItem } from '@/components/ui/accordion'
 import { ScrollArea } from '@/components/ui/scroll-area'
 import { Separator } from '@/components/ui/separator'
-import { ArrowRightIcon, PlusIcon } from '@radix-ui/react-icons'
+import { ArrowRightIcon, ArrowUpIcon, PlusIcon } from '@radix-ui/react-icons'
 
 export default function About() {
+  function scrollToTop() {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: 'smooth',
+    })
+  }
   return (
-    <main className="flex flex-col mt-30 gap-30">
+    <main className="flex flex-col mt-30 mb-30 gap-30">
       {/* Bio */}
       <section className="w-[55vw]">
         <div className="flex flex-col mb-12 gap-4">
@@ -171,8 +182,19 @@ export default function About() {
           </div>
         </ScrollArea>
       </section>
-      <section className="flex justify-center mb-30">
-        <h2 className="heading-xl">Keen for a kōrero?</h2>
+      <section className="flex flex-row justify-end gap-4">
+        <Button className="border" asChild>
+          <Link href="/work" className="sub-text">
+            My projects
+          </Link>
+        </Button>
+        <Button
+          className="border gap-1 sub-text"
+          variant="outline"
+          onClick={scrollToTop}
+        >
+          Back to top<ArrowUpIcon></ArrowUpIcon>
+        </Button>
       </section>
     </main>
   )
