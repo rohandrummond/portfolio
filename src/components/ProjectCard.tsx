@@ -17,7 +17,7 @@ export default function ProjectCard({
   return (
     <Link href={href}>
       <div className="flex flex-col gap-4">
-        <Image src={placeholder} alt="" className="rounded-xl" />
+        <Image src={placeholder} alt="" className="rounded-md" />
         <div className="flex flex-row justify-between items-center">
           <h3 className="body-large">{name}</h3>
           <div className="flex flex-row gap-2">
