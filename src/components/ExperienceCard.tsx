@@ -12,19 +12,15 @@ export default function ExperienceCard({
   position,
   company,
   duration,
-  bulletOne,
-  bulletTwo,
-  bulletThree,
+  bullets,
 }: {
   position: ReactNode
   company: string
   duration: string
-  bulletOne: string
-  bulletTwo: string
-  bulletThree: string
+  bullets: string[]
 }) {
   return (
-    <Card className="flex flex-col bg-background gap-4">
+    <div className="flex flex-col gap-4">
       <CardHeader>
         <CardDescription className="flex flex-row items-center gap-1">
           {position}
@@ -34,11 +30,13 @@ export default function ExperienceCard({
       </CardHeader>
       <CardContent>
         <ul className="pl-4">
-          <li className="list-disc">{bulletOne}</li>
-          <li className="list-disc">{bulletTwo}</li>
-          <li className="list-disc">{bulletThree}</li>
+          {bullets.map((value, index) => (
+            <li key={index} className="body-text list-disc">
+              {value}
+            </li>
+          ))}
         </ul>
       </CardContent>
-    </Card>
+    </div>
   )
 }

@@ -5,12 +5,20 @@ export default function SkillsAccordion({
   content,
 }: {
   section: string
-  content: string
+  content: string[]
 }) {
   return (
     <>
       <AccordionTrigger className="body-text">{section}</AccordionTrigger>
-      <AccordionContent className="body-text">{content}</AccordionContent>
+      <AccordionContent className="body-text">
+        <ul className="flex flex-col gap-1">
+          {content.map((value, index) => (
+            <li key={index} className="list-disc list-inside">
+              {value}
+            </li>
+          ))}
+        </ul>
+      </AccordionContent>
     </>
   )
 }
