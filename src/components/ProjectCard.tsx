@@ -1,23 +1,24 @@
-import Image from 'next/image'
+import Image, { StaticImageData } from 'next/image'
 import TransitionLink from './TransitionLink'
 import ProjectBadge from '@/components/ProjectBadge'
-import placeholder from '@/../public/images/placeholder.png'
 
 export default function ProjectCard({
   name,
   stack,
   blurb,
   href,
+  image,
 }: {
   name: string
   stack: string[]
   blurb: string
   href: string
+  image: StaticImageData
 }) {
   return (
     <TransitionLink href={href}>
       <div className="flex flex-col bg-card hover:bg-background border rounded-sm">
-        <Image src={placeholder} alt="" className="rounded-t-sm" />
+        <Image src={image} alt="" className="rounded-t-sm" />
         <div className="flex flex-col gap-2 p-5">
           <div className="flex flex-row justify-between items-start">
             <h3 className="body-large">{name}</h3>
