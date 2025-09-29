@@ -11,25 +11,25 @@ export default function Work() {
         <ProjectCard
           name="Two Cents [WIP]"
           stack={['Next', 'Firebase', 'Neon']}
-          blurb="Shared financial dashboard for couples"
+          blurb="A financial dashboard designed for couples who want insights into their shared finances e.g. wealth distribution, cash flow monitoring,  financial goal tracking."
           href="/work/two-cents"
         />
         <ProjectCard
           name="TattGPT"
           stack={['OpenAI', 'Angular', '.NET', 'Supabase']}
-          blurb="Web app for AI generated tattoo ideas"
+          blurb="An AI-powered tattoo idea generator that lets users quickly generate and save designs, without worrying about the fuss of prompt engineering."
           href="/work/tattgpt"
         />
         <ProjectCard
           name="Tip Tap Toe"
           stack={['Google Gemini', '.NET']}
-          blurb="Console app for code typing practice"
+          blurb="A console application for improving coding-style typing speed and accuracy. Users choose a language, get assessed, and receive personalised practice."
           href="/work/tip-tap-toe"
         />
         <ProjectCard
           name="Arbie Abroad"
           stack={['React', 'Express', 'MongoDB']}
-          blurb="Micro CMS for sharing travel memories"
+          blurb="A micro CMS for sharing travel memories with family and friends. Users can create and edit posts, manage users, and interact through a built-in commenting system."
           href="/work/arbie-abroad"
         />
       </section>

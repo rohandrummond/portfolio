@@ -1,37 +1,16 @@
 'use client'
 
-import { useRouter } from 'next/navigation'
 import EducationCard from '@/components/EducationCard'
 import ExperienceCard from '@/components/ExperienceCard'
 import SkillsAccordion from '@/components/SkillsAccordion'
 import { Accordion, AccordionItem } from '@/components/ui/accordion'
 import { ScrollArea } from '@/components/ui/scroll-area'
 import { Separator } from '@/components/ui/separator'
-import {
-  ArrowRightIcon,
-  ArrowUpIcon,
-  ArrowDownIcon,
-  PlusIcon,
-} from '@radix-ui/react-icons'
-import { RippleButton } from '@/components/ui/shadcn-io/ripple-button'
+import PageEndOptions from '@/components/PageEndOptions'
+
+import { ArrowRightIcon, ArrowDownIcon, PlusIcon } from '@radix-ui/react-icons'
 
 export default function About() {
-  const router = useRouter()
-  function navigateToWork() {
-    setTimeout(() => {
-      router.push('/work')
-    }, 300)
-  }
-  function scrollToTop() {
-    setTimeout(() => {
-      window.scrollTo({
-        top: 0,
-        left: 0,
-        behavior: 'smooth',
-      })
-    }, 250)
-  }
-
   return (
     <main className="container flex flex-col mx-auto mt-30 mb-20 gap-20">
       {/* Bio */}
@@ -229,23 +208,7 @@ export default function About() {
           </div>
         </ScrollArea>
       </section>
-      <section className="flex flex-row justify-between items-end my-10">
-        <h3 className="heading-lg">Thanks for stopping by!</h3>
-        <div className="flex flex-row gap-4">
-          <RippleButton
-            className="border hover:bg-background sub-text"
-            onClick={navigateToWork}
-          >
-            Check out my projects
-          </RippleButton>
-          <RippleButton
-            className="border gap-1 sub-text bg-background hover:bg-card"
-            onClick={scrollToTop}
-          >
-            Back to top<ArrowUpIcon></ArrowUpIcon>
-          </RippleButton>
-        </div>
-      </section>
+      <PageEndOptions buttonText="Check out my projects" />
     </main>
   )
 }

@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
+import TransitionLink from './TransitionLink'
 import face from '../../public/images/notion-face.png'
 
 export default function Header() {
@@ -21,19 +22,19 @@ export default function Header() {
           scrolled ? 'header-scroll' : ''
         }`}
       >
-        <Link href="/">
+        <TransitionLink href="/" className="nav-link">
           <Image src={face} height={24} alt="Cartoon of Rohan's face" />
-        </Link>
+        </TransitionLink>
         <nav className="flex flex-row gap-[50px]">
-          <Link href="/about" className="nav-link">
+          <TransitionLink href="/about" className="nav-link">
             About
-          </Link>
-          <Link href="/work" className="nav-link">
+          </TransitionLink>
+          <TransitionLink href="/work" className="nav-link">
             Work
-          </Link>
-          <Link href="/contact" className="nav-link">
+          </TransitionLink>
+          <TransitionLink href="/contact" className="nav-link">
             Let’s kōrero
-          </Link>
+          </TransitionLink>
         </nav>
       </header>
     </>

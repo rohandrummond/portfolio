@@ -1,5 +1,5 @@
-import Link from 'next/link'
 import Image from 'next/image'
+import TransitionLink from './TransitionLink'
 import ProjectBadge from '@/components/ProjectBadge'
 import placeholder from '@/../public/images/placeholder.png'
 
@@ -15,8 +15,8 @@ export default function ProjectCard({
   href: string
 }) {
   return (
-    <Link href={href}>
-      <div className="flex flex-col bg-card border rounded-sm">
+    <TransitionLink href={href}>
+      <div className="flex flex-col bg-card hover:bg-background border rounded-sm">
         <Image src={placeholder} alt="" className="rounded-t-sm" />
         <div className="flex flex-col gap-2 p-5">
           <div className="flex flex-row justify-between items-start">
@@ -27,13 +27,9 @@ export default function ProjectCard({
               ))}
             </div>
           </div>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis.
-          </p>
+          <p>{blurb}</p>
         </div>
       </div>
-    </Link>
+    </TransitionLink>
   )
 }

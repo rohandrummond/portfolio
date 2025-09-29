@@ -35,7 +35,7 @@ export default function Contact() {
             <Tooltip open={open}>
               <TooltipTrigger asChild>
                 <Button
-                  className="min-w-[100px] border py-5 cursor-pointer"
+                  className="min-w-[100px] border hover:bg-background cursor-pointer"
                   asChild
                   onClick={copyEmail}
                 >
@@ -53,7 +53,7 @@ export default function Contact() {
         </div>
         <div className="flex flex-row justify-between items-center">
           <p className="body-large">GitHub</p>
-          <Button className="min-w-[100px] border py-5" asChild>
+          <Button className="min-w-[100px] border hover:bg-background" asChild>
             <a
               href="https://github.com/rohandrummond"
               target="_blank"
@@ -66,7 +66,7 @@ export default function Contact() {
         </div>
         <div className="flex flex-row justify-between items-center">
           <p className="body-large">LinkedIn</p>
-          <Button className="min-w-[100px] border py-5" asChild>
+          <Button className="min-w-[100px] border hover:bg-background" asChild>
             <a
               href="https://www.linkedin.com/in/drummondr/"
               target="_blank"
