@@ -29,9 +29,9 @@ export default function ExperienceCard({
         <CardAction>{duration}</CardAction>
       </CardHeader>
       <CardContent>
-        <ul className="pl-4">
+        <ul className="flex flex-col gap-1">
           {bullets.map((value, index) => (
-            <li key={index} className="body-text list-disc">
+            <li key={index} className="body-text list-disc list-inside">
               {value}
             </li>
           ))}

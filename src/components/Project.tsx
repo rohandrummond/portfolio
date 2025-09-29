@@ -107,19 +107,22 @@ export default function Project({
         <Image src={placeholder} alt="" className="rounded-sm" />
         <Image src={placeholder} alt="" className="rounded-sm" />
       </section>
-      <section className="flex flex-row justify-end gap-4">
-        <Button className="border" asChild>
-          <Link href="/about" className="sub-text">
-            About me
-          </Link>
-        </Button>
-        <Button
-          className="border gap-1 sub-text"
-          variant="outline"
-          onClick={scrollToTop}
-        >
-          Back to top<ArrowUpIcon></ArrowUpIcon>
-        </Button>
+      <section className="flex flex-row justify-between items-end">
+        <h3 className="heading-lg">Thanks for stopping by!</h3>
+        <div className="flex flex-row gap-4">
+          <Button className="border" asChild>
+            <Link href="/about" className="sub-text">
+              Get to know me
+            </Link>
+          </Button>
+          <Button
+            className="border gap-1 sub-text"
+            variant="outline"
+            onClick={scrollToTop}
+          >
+            Back to top<ArrowUpIcon></ArrowUpIcon>
+          </Button>
+        </div>
       </section>
     </main>
   )

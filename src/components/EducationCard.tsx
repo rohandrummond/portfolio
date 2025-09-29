@@ -21,12 +21,12 @@ export default function EducationCard({
     <Card className="flex flex-col lg:w-1/3 gap-4">
       <CardHeader>
         <div className="flex flex-col mb-2">
-          <CardDescription>{year}</CardDescription>
-          <CardDescription>{course}</CardDescription>
+          <CardDescription className="sub-text">{year}</CardDescription>
+          <CardDescription className="sub-text">{course}</CardDescription>
         </div>
         <CardTitle className="sub-heading">{provider}</CardTitle>
       </CardHeader>
-      <CardContent>{description}</CardContent>
+      <CardContent className="body-text">{description}</CardContent>
     </Card>
   )
 }
