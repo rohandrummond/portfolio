@@ -10,6 +10,7 @@ import {
   TooltipContent,
   TooltipTrigger,
 } from '@/components/ui/tooltip'
+import { motion } from 'motion/react'
 
 export default function Contact() {
   const [open, setOpen] = useState(false)
@@ -34,16 +35,24 @@ export default function Contact() {
           <TooltipProvider>
             <Tooltip open={open}>
               <TooltipTrigger asChild>
-                <Button
-                  className="min-w-[100px] border hover:bg-background cursor-pointer"
-                  asChild
-                  onClick={copyEmail}
+                <motion.div
+                  whileHover={{
+                    scale: 1.025,
+                    transition: { duration: 0.2 },
+                  }}
+                  transition={{ duration: 0.1 }}
                 >
-                  <div className="flex f-row items-center gap-3">
-                    <p className="sub-text">Copy</p>
-                    <CopyIcon />
-                  </div>
-                </Button>
+                  <Button
+                    className="min-w-[100px] border hover:bg-background cursor-pointer"
+                    asChild
+                    onClick={copyEmail}
+                  >
+                    <div className="flex f-row items-center gap-3">
+                      <p className="sub-text">Copy</p>
+                      <CopyIcon />
+                    </div>
+                  </Button>
+                </motion.div>
               </TooltipTrigger>
               <TooltipContent className="sub-text" side="top" sideOffset={5}>
                 Copied
@@ -51,31 +60,54 @@ export default function Contact() {
             </Tooltip>
           </TooltipProvider>
         </div>
+
         <div className="flex flex-row justify-between items-center">
           <p className="body-large">GitHub</p>
-          <Button className="min-w-[100px] border hover:bg-background" asChild>
-            <a
-              href="https://github.com/rohandrummond"
-              target="_blank"
-              className="flex f-row items-center gap-3"
+          <motion.div
+            whileHover={{
+              scale: 1.025,
+              transition: { duration: 0.2 },
+            }}
+            transition={{ duration: 0.1 }}
+          >
+            <Button
+              className="min-w-[100px] border hover:bg-background"
+              asChild
             >
-              <p className="sub-text">Visit</p>
-              <ExternalLinkIcon />
-            </a>
-          </Button>
+              <a
+                href="https://github.com/rohandrummond"
+                target="_blank"
+                className="flex f-row items-center gap-3"
+              >
+                <p className="sub-text">Visit</p>
+                <ExternalLinkIcon />
+              </a>
+            </Button>
+          </motion.div>
         </div>
         <div className="flex flex-row justify-between items-center">
           <p className="body-large">LinkedIn</p>
-          <Button className="min-w-[100px] border hover:bg-background" asChild>
-            <a
-              href="https://www.linkedin.com/in/drummondr/"
-              target="_blank"
-              className="flex f-row items-center gap-3"
+          <motion.div
+            whileHover={{
+              scale: 1.025,
+              transition: { duration: 0.2 },
+            }}
+            transition={{ duration: 0.1 }}
+          >
+            <Button
+              className="min-w-[100px] border hover:bg-background"
+              asChild
             >
-              <p className="sub-text">Visit</p>
-              <ExternalLinkIcon />
-            </a>
-          </Button>
+              <a
+                href="https://www.linkedin.com/in/drummondr/"
+                target="_blank"
+                className="flex f-row items-center gap-3"
+              >
+                <p className="sub-text">Visit</p>
+                <ExternalLinkIcon />
+              </a>
+            </Button>
+          </motion.div>
         </div>
       </section>
     </main>
