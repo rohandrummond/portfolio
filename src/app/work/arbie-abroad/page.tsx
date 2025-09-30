@@ -1,3 +1,27 @@
+import Project from '@/components/Project'
+import imageOne from '@/../public/images/arbie-abroad/arbie-abroad-desktop-screenshots.png'
+import imageTwo from '@/../public/images/arbie-abroad/arbie-abroad-mobile-screenshots.png'
+
 export default function ArbieAbroad() {
-  return <h1>Hello from ArbieAbroad</h1>
+  return (
+    <Project
+      name="Arbie Abroad"
+      repo="https://github.com/rohandrummond/arbie-abroad"
+      stack={{
+        'Front-end': 'React',
+        API: 'Express',
+        Database: 'MongoDB',
+      }}
+      description="Arbie Abroad is a full-stack travel blog app I built as a lightweight and convenient way for sharing and preserving my travel memories. It features a React front end and an Express API, with posts, images, and user data stored in MongoDB,."
+      badges={['JavaScript', 'Node.js', 'NoSQL']}
+      features={[
+        'Interactive world map built with React Simple Maps for exploring travel posts.',
+        'User authentication & accounts with secure bcrypt encryption and Redux-managed state.',
+        'Dynamic content through an Express-powered RESTful API with modular route handlers.',
+        'MongoDB data layer with dedicated collections for users, posts, comments, and image storage via GridFS.',
+        'Admin tools for creating posts, managing users, and moderating content.',
+      ]}
+      images={[imageOne, imageTwo]}
+    />
+  )
 }

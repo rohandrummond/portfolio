@@ -21,7 +21,7 @@ export default function PageEndOptions({ buttonText }: { buttonText: string }) {
   }
   return (
     <section className="flex flex-row justify-between items-end my-10">
-      <h3 className="heading-lg">Thanks for stopping by</h3>
+      <h3 className="heading-lg">Thanks for stopping by!</h3>
       <div className="flex flex-row gap-4">
         <RippleButton
           className="border hover:bg-background sub-text"
@@ -33,7 +33,7 @@ export default function PageEndOptions({ buttonText }: { buttonText: string }) {
           className="border gap-1 sub-text bg-background hover:bg-card"
           onClick={scrollToTop}
         >
-          Back to top<ArrowUpIcon></ArrowUpIcon>
+          Scroll to top<ArrowUpIcon></ArrowUpIcon>
         </RippleButton>
       </div>
     </section>

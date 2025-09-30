@@ -25,8 +25,8 @@ export default function Contact() {
   return (
     <main className="flex-1 flex flex-col justify-center gap-[2rem] w-full max-w-[45vw] mx-auto">
       <section>
-        <h1 className="heading-lg">Contact</h1>
-        <h2 className="sub-heading">How you can reach out to me</h2>
+        <h1 className="heading-lg">Get in touch</h1>
+        <h2 className="sub-heading">I’m always up for a coffee or kōrero!</h2>
       </section>
       <Separator />
       <section className="flex flex-col gap-4">

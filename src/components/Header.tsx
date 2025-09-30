@@ -33,7 +33,7 @@ export default function Header() {
             Work
           </TransitionLink>
           <TransitionLink href="/contact" className="nav-link">
-            Let’s kōrero
+            Contact
           </TransitionLink>
         </nav>
       </header>

@@ -1,26 +1,28 @@
 import Project from '@/components/Project'
+import imageOne from '@/../public/images/tattgpt/tattgpt-desktop-screenshots.png'
+import imageTwo from '@/../public/images/tattgpt/tattgpt-screenshots-mobile.png'
 
 export default function TattGPT() {
   return (
     <Project
       name="TattGPT"
       repo="https://github.com/rohandrummond/tattgpt"
-      subtitle="A web app for AI-generated tattoo ideas"
       stack={{
         'Front-end': 'Angular',
         API: '.NET',
         Database: 'Supabase',
         LLM: 'Google Gemini',
       }}
-      description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut. Lorem ipsum dolor sit amet, consectetur."
+      description="TattGPT is a full-stack web app that generates personalised tattoo ideas using AI, without the fuss of constant prompt engineering. Built with an Angular front-end and .NET web API, it integrates with Supabase (PostgreSQL) for storage and OpenAI for concept and image generation."
       badges={['C#', 'TypeScript', 'PostgreSQL']}
-      problem="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna ."
-      learnings="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna ."
       features={[
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do',
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do',
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do',
+        'AI generation of tattoo concepts (GPT-5 Mini) and custom images (DALL·E 3) via a .NET API.',
+        'Personalised idea capture through an Angular Reactive Form for style, size, and placement preferences.',
+        'Dynamic results display powered by structured JSON responses from the backend.',
+        'User authentication and collections with Supabase (including Google OAuth) for saving and managing designs.',
+        'Modern architecture with a clean .NET Web API, separating models, services, and data handling in PostgreSQL.',
       ]}
+      images={[imageOne, imageTwo]}
     />
   )
 }
