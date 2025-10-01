@@ -23,6 +23,7 @@ export default function TattGPT() {
         'Modern architecture with a clean .NET Web API, separating models, services, and data handling in PostgreSQL.',
       ]}
       images={[imageOne, imageTwo]}
+      videoSrc="/videos/tattgpt-demo.mp4"
     />
   )
 }
