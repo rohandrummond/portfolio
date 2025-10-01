@@ -22,6 +22,7 @@ export default function ArbieAbroad() {
         'Admin tools for creating posts, managing users, and moderating content.',
       ]}
       images={[imageOne, imageTwo]}
+      videoSrc="/videos/arbie-abroad-demo.mp4"
     />
   )
 }

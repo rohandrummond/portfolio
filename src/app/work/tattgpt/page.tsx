@@ -11,7 +11,7 @@ export default function TattGPT() {
         'Front-end': 'Angular',
         API: '.NET',
         Database: 'Supabase',
-        LLM: 'Google Gemini',
+        LLM: 'GPT & DALL·E 3',
       }}
       description="TattGPT is a full-stack web app that generates personalised tattoo ideas using AI, without the fuss of constant prompt engineering. Built with an Angular front-end and .NET web API, it integrates with Supabase (PostgreSQL) for storage and OpenAI for concept and image generation."
       badges={['C#', 'TypeScript', 'PostgreSQL']}
