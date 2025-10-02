@@ -31,7 +31,7 @@ export default function Project({
 }) {
   return (
     <main className="container mx-auto pt-50">
-      <div className="grid grid-cols-2 gap-y-30 gap-x-20 pb-20">
+      <div className="grid grid-cols-2 gap-y-30 gap-x-20">
         <section className="flex flex-col justify-between">
           <h1 className="heading-xl">{name}</h1>
           <div className="flex flex-row gap-4">

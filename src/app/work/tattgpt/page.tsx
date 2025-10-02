@@ -14,7 +14,7 @@ export default function TattGPT() {
         LLM: 'GPT & DALL·E 3',
       }}
       description="TattGPT is a full-stack web app that generates personalised tattoo ideas using AI, without the fuss of constant prompt engineering. Built with an Angular front-end and .NET web API, it integrates with Supabase (PostgreSQL) for storage and OpenAI for concept and image generation."
-      badges={['C#', 'TypeScript', 'PostgreSQL']}
+      badges={['TypeScript', 'C#', 'PostgreSQL', 'GPT', 'DALL·E 3']}
       features={[
         'AI generation of tattoo concepts (GPT-5 Mini) and custom images (DALL·E 3) via a .NET API.',
         'Personalised idea capture through an Angular Reactive Form for style, size, and placement preferences.',

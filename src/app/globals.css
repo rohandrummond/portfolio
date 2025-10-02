@@ -184,20 +184,15 @@ body {
   letter-spacing: normal;
 }
 
-.sub-text {
+.body-small {
   font-size: 1rem;
   font-weight: 300;
   line-height: 120%;
   letter-spacing: normal;
 }
 
-.header {
-  background-color: var(--color-background);
-  transition: background-color 0.5s ease;
-}
-
 .header-scroll {
   background-color: var(--color-card);
   border-bottom: 0.5px var(--color-border) solid;
-  transition: background-color 0.5s ease, border-bottom 0.5s ease;
+  transition: background-color 0.1s ease, border-bottom 0.1s ease;
 }

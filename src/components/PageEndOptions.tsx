@@ -20,7 +20,7 @@ export default function PageEndOptions({ buttonText }: { buttonText: string }) {
     }, 250)
   }
   return (
-    <section className="flex flex-row justify-between items-end my-10">
+    <section className="flex flex-row justify-between items-end mt-40 mb-50">
       <h3 className="heading-lg">Thanks for stopping by!</h3>
       <div className="flex flex-row gap-4">
         <RippleButton
