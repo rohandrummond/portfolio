@@ -20,17 +20,17 @@ export default function PageEndOptions({ buttonText }: { buttonText: string }) {
     }, 250)
   }
   return (
-    <section className="flex flex-row justify-between items-end mt-40 mb-50">
+    <section className="flex flex-col lg:flex-row justify-between items-end mt-40 mb-50">
       <h3 className="heading-lg">Thanks for stopping by!</h3>
       <div className="flex flex-row gap-4">
         <RippleButton
-          className="border hover:bg-background sub-text"
+          className="body border hover:bg-background"
           onClick={navigateToWork}
         >
           {buttonText}
         </RippleButton>
         <RippleButton
-          className="border gap-1 sub-text bg-background hover:bg-card"
+          className="body border gap-1 bg-background hover:bg-card"
           onClick={scrollToTop}
         >
           Scroll to top<ArrowUpIcon></ArrowUpIcon>

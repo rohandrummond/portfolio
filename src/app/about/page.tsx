@@ -3,30 +3,24 @@
 import Image from 'next/image'
 import EducationCard from '@/components/EducationCard'
 import ExperienceCard from '@/components/ExperienceCard'
+import PageEndOptions from '@/components/PageEndOptions'
 import SkillsAccordion from '@/components/SkillsAccordion'
 import { Accordion, AccordionItem } from '@/components/ui/accordion'
 import { ScrollArea } from '@/components/ui/scroll-area'
 import { Separator } from '@/components/ui/separator'
-import PageEndOptions from '@/components/PageEndOptions'
-import image from '@/../public/images/rohan-profile.png'
-
 import { ArrowRightIcon, ArrowDownIcon, PlusIcon } from '@radix-ui/react-icons'
+import image from '@/../public/images/rohan-profile.png'
 
 export default function About() {
   return (
-    <main className="container flex flex-col mx-auto">
-      <section className="flex flex-col justify-between h-[100vh] pt-[30vh] pb-25">
-        <h1 className="relative flex flex-col heading-lg">
-          <span className="text-right">I’m a software developer</span>
+    <main className="flex flex-col container mx-auto px-6">
+      <section className="flex flex-col justify-end h-[100vh] pt-[30vh] pb-6 lg:pb-25">
+        <h1 className="relative flex flex-col heading-lg w-[90%]">
+          <span className="z-2">I’m a software developer</span>
           <span className="z-2">based in Aotearoa, New Zealand.</span>
-          <Image
-            src={image}
-            alt=""
-            className="absolute right-0 top-18 w-[220px] h-[220px] object-cover rounded-xs z-1"
-          />
         </h1>
-        <div className="flex justify-between items-end">
-          <p className="w-1/3 body-text">
+        <div className="flex flex-col items-start justify-between lg:flex-row lg:items-end">
+          <p className="w-[80%] lg:w-1/3 body">
             I found my way into software later in life, after realising my old
             career wasn’t where I wanted to be. That shift gave me a fresh
             perspective and a bit of grit, and I’ve been hooked on building and
@@ -34,29 +28,35 @@ export default function About() {
             gym, fishing, brewing a cheeky beer, or hanging out with my partner,
             mates, and whānau.
           </p>
-          <div className="flex flex-row items-center gap-1">
-            <p
-              className="footer-link hover:underline"
-              onClick={() => {
-                window.scrollTo({
-                  top: window.innerHeight,
-                  behavior: 'smooth',
-                })
-              }}
-            >
-              See more
-            </p>
-            <ArrowDownIcon />
+          <div className="flex flex-row-reverse justify-between lg:flex-row items-end w-full gap-10">
+            <div className="flex lg:flex-row items-center gap-1">
+              <p
+                className="body hover:underline"
+                onClick={() => {
+                  window.scrollTo({
+                    top: window.innerHeight,
+                    behavior: 'smooth',
+                  })
+                }}
+              >
+                See more
+              </p>
+              <ArrowDownIcon />
+            </div>
+            <Image
+              src={image}
+              alt=""
+              className="w-[220px] h-[220px] object-cover rounded-lg z-1"
+            />
           </div>
         </div>
       </section>
-
-      <div className="flex flex-col gap-30">
+      <div className="flex flex-col">
         <Separator />
         {/* Education */}
-        <section className="flex flex-col gap-12">
+        <section className="flex flex-col">
           <h2 className="heading-md heading-tight">Education</h2>
-          <div className="flex flex-row justify-between gap-10">
+          <div className="flex flex-col lg:flex-row justify-between gap-10">
             <EducationCard
               course="Certificate in Applied Certified Development"
               provider="Dev Academy Aotearoa"
@@ -116,15 +116,15 @@ export default function About() {
         <Separator />
         {/* Experience */}
         <section>
-          <div className="flex flex-row justify-between items-end mb-10">
+          <div className="flex flex-row justify-between items-end">
             <h2 className="heading-md">Experience</h2>
-            <div className="flex f-row items-center">
-              <p className="sub-text">Scroll me</p>
+            <div className="flex f-row items-center gap-1">
+              <p className="body">Scroll me</p>
               <ArrowDownIcon></ArrowDownIcon>
             </div>
           </div>
           <ScrollArea className="h-[60vh] w-full bg-card border rounded-lg ">
-            <div className="flex flex-col py-10 px-6 gap-8">
+            <div className="flex flex-col gap-8">
               <ExperienceCard
                 position="Web Developer (Volunteer)"
                 company="Manta Watch NZ"

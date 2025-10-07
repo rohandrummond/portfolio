@@ -9,8 +9,8 @@ export default function SkillsAccordion({
 }) {
   return (
     <>
-      <AccordionTrigger className="body-text">{section}</AccordionTrigger>
-      <AccordionContent className="body-text">
+      <AccordionTrigger className="body">{section}</AccordionTrigger>
+      <AccordionContent className="body">
         <ul className="flex flex-col gap-1">
           {content.map((value, index) => (
             <li key={index} className="list-disc list-inside">

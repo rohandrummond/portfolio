@@ -26,12 +26,12 @@ export default function Contact() {
     <main className="flex-1 flex flex-col justify-center gap-[2rem] w-full max-w-[45vw] mx-auto">
       <section>
         <h1 className="heading-lg">Get in touch</h1>
-        <h2 className="sub-heading">I’m always up for a coffee or kōrero!</h2>
+        <h2 className="body-lg">I’m always up for a coffee or kōrero!</h2>
       </section>
       <Separator />
       <section className="flex flex-col gap-4">
         <div className="flex flex-row justify-between items-center">
-          <p className="body-large">Email</p>
+          <p className="body-lg">Email</p>
           <TooltipProvider>
             <Tooltip open={open}>
               <TooltipTrigger asChild>
@@ -48,13 +48,13 @@ export default function Contact() {
                     onClick={copyEmail}
                   >
                     <div className="flex f-row items-center gap-3">
-                      <p className="sub-text">Copy</p>
+                      <p className="body">Copy</p>
                       <CopyIcon />
                     </div>
                   </Button>
                 </motion.div>
               </TooltipTrigger>
-              <TooltipContent className="sub-text" side="top" sideOffset={5}>
+              <TooltipContent className="body" side="top" sideOffset={5}>
                 Copied
               </TooltipContent>
             </Tooltip>
@@ -62,7 +62,7 @@ export default function Contact() {
         </div>
 
         <div className="flex flex-row justify-between items-center">
-          <p className="body-large">GitHub</p>
+          <p className="body-lg">GitHub</p>
           <motion.div
             whileHover={{
               scale: 1.025,
@@ -79,14 +79,14 @@ export default function Contact() {
                 target="_blank"
                 className="flex f-row items-center gap-3"
               >
-                <p className="sub-text">Visit</p>
+                <p className="body">Visit</p>
                 <ExternalLinkIcon />
               </a>
             </Button>
           </motion.div>
         </div>
         <div className="flex flex-row justify-between items-center">
-          <p className="body-large">LinkedIn</p>
+          <p className="body-lg">LinkedIn</p>
           <motion.div
             whileHover={{
               scale: 1.025,
@@ -103,7 +103,7 @@ export default function Contact() {
                 target="_blank"
                 className="flex f-row items-center gap-3"
               >
-                <p className="sub-text">Visit</p>
+                <p className="body">Visit</p>
                 <ExternalLinkIcon />
               </a>
             </Button>

@@ -1,12 +1,5 @@
 'use client'
 import { usePathname } from 'next/navigation'
-
-import {
-  HoverCard,
-  HoverCardContent,
-  HoverCardTrigger,
-} from '@/components/ui/hover-card'
-
 import { GitHubLogoIcon, LinkedInLogoIcon } from '@radix-ui/react-icons'
 
 export default function Footer() {
@@ -16,7 +9,7 @@ export default function Footer() {
     <>
       <footer
         className={`flex f-row ${
-          pathname != '/' ? 'justify-between' : 'justify-end'
+          pathname != '/' ? 'justify-between' : 'justify-center md:justify-end'
         } items-end mb-5 mx-5 z-1`}
       >
         {pathname != '/' ? (
@@ -33,17 +26,10 @@ export default function Footer() {
                 ></LinkedInLogoIcon>
               </a>
             </div>
-            <p className="footer-link">© Rohan Drummond 2025</p>
+            <p className="body-sm">© Rohan Drummond 2025</p>
           </>
         ) : (
-          <div className="flex flex-col items-end">
-            <p className="body-small">
-              Deployed with AWS Route 53, CloudFront and Amazon S3.
-            </p>
-            <p className="body-small">
-              Built with Next.js, Tailwind CSS and shadcn/ui.
-            </p>
-          </div>
+          <p className="body-sm">[ Deployed with Next.js and AWS ]</p>
         )}
       </footer>
     </>

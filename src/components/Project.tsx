@@ -7,6 +7,7 @@ import ProjectBadge from '@/components/ProjectBadge'
 import PageEndOptions from './PageEndOptions'
 import { ExternalLinkIcon } from '@radix-ui/react-icons'
 import { motion } from 'motion/react'
+import { Separator } from './ui/separator'
 
 export default function Project({
   name,
@@ -48,12 +49,12 @@ export default function Project({
         <section className="flex flex-col justify-between items-start">
           <div className="flex flex-col ">
             {Object.keys(stack).map((key, index) => (
-              <h3 key={index} className="sub-heading">
-                {key}: <span className="font-medium">{stack[key]}</span>
+              <h3 key={index} className="body-lg">
+                {key}: {stack[key]}
               </h3>
             ))}
           </div>
-          <p className="body-text w-[90%]">{description}</p>
+          <p className="body w-[90%]">{description}</p>
           <motion.div
             whileHover={{
               scale: 1.025,
@@ -67,7 +68,7 @@ export default function Project({
                 target="_blank"
                 className="flex f-row items-center gap-3"
               >
-                <p className="sub-text">GitHub</p>
+                <p className="body">GitHub</p>
                 <ExternalLinkIcon />
               </a>
             </Button>
@@ -76,12 +77,12 @@ export default function Project({
         <section>
           <Card className="flex flex-col justify-center p-8">
             <div className="flex flex-col gap-6">
-              <h4 className="body-text">Key features</h4>
+              <h4 className="body">Key features</h4>
               <ul className="flex flex-col gap-2 list-disc list-inside">
                 {features.map((value, index) => (
                   <li
                     key={index}
-                    className="body-text before:content-[''] before:ml-[-12]"
+                    className="body before:content-[''] before:ml-[-12]"
                   >
                     {value}
                   </li>

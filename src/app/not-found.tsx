@@ -16,10 +16,9 @@ export default function NotFound() {
   return (
     <div className="flex flex-col flex-1 justify-center items-center">
       <div className="flex flex-col items-center">
-        <div className="flex flex-col items-center gap-2 mb-10">
+        <div className="flex flex-col items-center gap-2 mb-8">
           <h2 className="heading-xl">404</h2>
-          <h3 className="heading-md">Page not found</h3>
-          <p className="body-text">Unluggy uce</p>
+          <h3 className="body-lg">Page not found</h3>
         </div>
         <RippleButton className="border flex items-center" onClick={handleHome}>
           <p>Home</p>

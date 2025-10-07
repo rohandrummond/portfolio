@@ -34,14 +34,14 @@ export default function EducationCard({
       <Card className="flex flex-col gap-4 hover:bg-background">
         <CardHeader>
           <div className="flex flex-col mb-2">
-            <CardDescription className="sub-text">{year}</CardDescription>
-            <CardDescription className="sub-text">{course}</CardDescription>
+            <CardDescription className="body">{year}</CardDescription>
+            <CardDescription className="body">{course}</CardDescription>
           </div>
-          <CardTitle className="sub-heading">{provider}</CardTitle>
+          <CardTitle className="body-lg">{provider}</CardTitle>
         </CardHeader>
-        <CardContent className="body-text">{description}</CardContent>
+        <CardContent className="body">{description}</CardContent>
         <a href={link} target="_blank">
-          <CardFooter>
+          <CardFooter className="body">
             Learn more <ExternalLinkIcon className="ml-1" />
           </CardFooter>
         </a>
