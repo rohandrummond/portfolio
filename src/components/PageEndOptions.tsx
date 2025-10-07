@@ -1,3 +1,5 @@
+'use client'
+
 import { useRouter } from 'next/navigation'
 import { transitionPage } from '@/lib/utils'
 import { RippleButton } from '@/components/ui/shadcn-io/ripple-button'
