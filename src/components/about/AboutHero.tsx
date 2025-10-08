@@ -6,13 +6,13 @@ import { ArrowDownIcon } from '@radix-ui/react-icons'
 
 export default function AboutHero() {
   return (
-    <section className="flex flex-col justify-end h-[100vh] pt-[30vh] pb-6 lg:pb-25">
-      <h1 className="relative flex flex-col heading-lg w-[90%]">
+    <section className="min-h-[100dvh] flex flex-col justify-end lg:justify-between pt-30 lg:pt-[45vh] xl:pt-[35vh] pb-6 xl:pb-10">
+      <h1 className="heading-lg relative flex flex-col pb-10">
         <span className="z-2">I’m a software developer</span>
         <span className="z-2">based in Aotearoa, New Zealand.</span>
       </h1>
-      <div className="flex flex-col items-start justify-between lg:flex-row lg:items-end">
-        <p className="w-[80%] lg:w-1/3 body">
+      <div className="flex flex-col lg:flex-row items-start lg:items-end justify-between">
+        <p className="body pb-12 md:w-2/3 lg:w-1/2 xl:w-1/3 lg:pb-0">
           I found my way into software later in life, after realising my old
           career wasn’t where I wanted to be. That shift gave me a fresh
           perspective and a bit of grit, and I’ve been hooked on building and
@@ -20,13 +20,13 @@ export default function AboutHero() {
           fishing, brewing a cheeky beer, or hanging out with my partner, mates,
           and whānau.
         </p>
-        <div className="flex flex-row-reverse justify-between lg:flex-row items-end w-full gap-10">
-          <div className="flex lg:flex-row items-center gap-1">
+        <div className="w-full lg:w-auto flex flex-row-reverse lg:flex-row justify-between items-end lg:gap-6">
+          <div className="flex items-center gap-1">
             <p
-              className="body hover:underline"
+              className="body cursor-pointer hover:underline"
               onClick={() => {
                 window.scrollTo({
-                  top: window.innerHeight,
+                  top: window.innerHeight - 70,
                   behavior: 'smooth',
                 })
               }}
