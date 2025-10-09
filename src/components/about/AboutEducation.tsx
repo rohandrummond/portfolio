@@ -3,10 +3,12 @@ import EducationCard from '@/components/EducationCard'
 export default function AboutEducation() {
   return (
     <section className="flex flex-col">
-      <h2 className="heading-md heading-tight">Education</h2>
-      <div className="flex flex-col lg:flex-row justify-between gap-10">
+      <h2 className="heading-md heading-tight mb-8 md:mb-12 xl:mb-16">
+        Education
+      </h2>
+      <div className="flex flex-col md:flex-row flex-wrap justify-between gap-8 xl:gap-10">
         <EducationCard
-          course="Certificate in Applied Certified Development"
+          course="Applied Software Development"
           provider="Dev Academy Aotearoa"
           description="An intensive, 17-week bootcamp focused on learning the front and back-end skills required for building full-stack web applications."
           year="2025 (Present)"

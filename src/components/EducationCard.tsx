@@ -26,14 +26,14 @@ export default function EducationCard({
 }) {
   return (
     <motion.div
-      className="lg:w-1/3"
+      className="md:w-[calc(50%-1rem)] xl:w-[calc(33%-1.5rem)]"
       whileHover={{
         scale: 1.01,
         transition: { duration: 0.2 },
       }}
       transition={{ duration: 0.1 }}
     >
-      <Card className="flex flex-col gap-4 hover:bg-background">
+      <Card className="flex flex-col gap-4 hover:bg-background min-h-full">
         <CardHeader>
           <div className="flex flex-col mb-2">
             <CardDescription className="body">{year}</CardDescription>
@@ -43,7 +43,7 @@ export default function EducationCard({
         </CardHeader>
         <CardContent className="body">{description}</CardContent>
         <a href={link} target="_blank">
-          <CardFooter className="body">
+          <CardFooter className="body gap-1">
             Learn more <ExternalLinkIcon className="ml-1" />
           </CardFooter>
         </a>

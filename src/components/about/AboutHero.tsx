@@ -6,7 +6,7 @@ import { ArrowDownIcon } from '@radix-ui/react-icons'
 
 export default function AboutHero() {
   return (
-    <section className="min-h-[100dvh] flex flex-col justify-end lg:justify-between pt-30 lg:pt-[45vh] xl:pt-[35vh] pb-6 xl:pb-10">
+    <section className="min-h-[100dvh] flex flex-col justify-end lg:justify-between mb-16 md:mb-20 xl:mb-24 pt-30 lg:pt-[45vh] xl:pt-[35vh] pb-6 xl:pb-10">
       <h1 className="heading-lg relative flex flex-col pb-10">
         <span className="z-2">I’m a software developer</span>
         <span className="z-2">based in Aotearoa, New Zealand.</span>
@@ -26,7 +26,7 @@ export default function AboutHero() {
               className="body cursor-pointer hover:underline"
               onClick={() => {
                 window.scrollTo({
-                  top: window.innerHeight - 70,
+                  top: window.innerHeight + 50,
                   behavior: 'smooth',
                 })
               }}

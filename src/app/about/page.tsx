@@ -9,7 +9,7 @@ export default function About() {
   return (
     <main className="flex flex-col container mx-auto px-6">
       <AboutHero />
-      <div className="flex flex-col">
+      <div className="flex flex-col gap-16 md:gap-20 xl:gap-24">
         <Separator />
         <AboutEducation />
         <Separator />
