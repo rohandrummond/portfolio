@@ -38,10 +38,14 @@ export default function Header() {
     } else {
       document.body.classList.remove('overflow-hidden')
     }
-    const onScroll = () => setScrolled(window.scrollY > 50)
+    const onScroll = () => {
+      if (!drawerOpen) {
+        setScrolled(window.scrollY > 50)
+      }
+    }
     window.addEventListener('scroll', onScroll)
     return () => window.removeEventListener('scroll', onScroll)
-  }, [path])
+  }, [path, drawerOpen])
 
   const pathname = usePathname()
 
