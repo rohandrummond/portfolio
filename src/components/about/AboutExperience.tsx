@@ -6,15 +6,15 @@ import { ArrowRightIcon, ArrowDownIcon, PlusIcon } from '@radix-ui/react-icons'
 export default function AboutExperience() {
   return (
     <section>
-      <div className="flex flex-row justify-between items-end">
+      <div className="flex flex-row justify-between items-end mb-8 md:mb-12 xl:mb-16">
         <h2 className="heading-md">Experience</h2>
         <div className="flex f-row items-center gap-1">
           <p className="body">Scroll me</p>
           <ArrowDownIcon></ArrowDownIcon>
         </div>
       </div>
-      <ScrollArea className="h-[60vh] w-full bg-card border rounded-lg ">
-        <div className="flex flex-col gap-8">
+      <ScrollArea className="h-[80vh] md:h-[70vh] w-full bg-card border rounded-xl">
+        <div className="flex flex-col gap-8 md:gap-10 xl:gap-12 py-6 md:py-8 xl:py-10">
           <ExperienceCard
             position="Web Developer (Volunteer)"
             company="Manta Watch NZ"
@@ -91,8 +91,7 @@ export default function AboutExperience() {
           <ExperienceCard
             position={
               <>
-                Client Service Executive <ArrowRightIcon /> Senior Client
-                Service Executive
+                Client Service Executive <ArrowRightIcon /> Senior CSE
               </>
             }
             company="Nielsen"
