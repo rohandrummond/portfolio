@@ -22,9 +22,11 @@ export default function PageEndOptions({ buttonText }: { buttonText: string }) {
     }, 250)
   }
   return (
-    <section className="flex flex-col lg:flex-row justify-between items-end mt-40 mb-50">
-      <h3 className="heading-lg">Thanks for stopping by!</h3>
-      <div className="flex flex-row gap-4">
+    <section className="flex flex-col md:flex-row justify-between items-center md:items-end mt-20 mb-30 md:mt-30 md:mb-40">
+      <h3 className="w-[350px] md:w-[375px] lg:w-[500px] xl:w-auto heading-lg text-center md:text-left mb-10 md:m-0">
+        Thanks for stopping by
+      </h3>
+      <div className="w-full xl:w-auto flex flex-row justify-center md:justify-end gap-6">
         <RippleButton
           className="body border hover:bg-background"
           onClick={navigateToWork}
