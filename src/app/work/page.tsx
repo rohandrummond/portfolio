@@ -6,8 +6,8 @@ import arbieAbroadImage from '@/../public/images/arbie-abroad/arbie-abroad-card.
 
 export default function Work() {
   return (
-    <main className="container mx-auto flex flex-col mt-40 mb-40 gap-30">
-      <section className="grid grid-cols-2 gap-12">
+    <main className="container mx-auto flex flex-col my-50 px-6">
+      <section className="grid grid-cols-1 xl:grid-cols-2 gap-12 md:gap-16">
         <ProjectCard
           name="Two Cents [WIP]"
           stack={['TypeScript', 'NoSQL', 'PostgreSQL']}

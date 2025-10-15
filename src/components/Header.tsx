@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import { usePathname, useRouter } from 'next/navigation'
+import { usePathname } from 'next/navigation'
 import { useMediaQuery } from '@/hooks/use-media-query'
 import Image from 'next/image'
 import TransitionLink from './TransitionLink'
