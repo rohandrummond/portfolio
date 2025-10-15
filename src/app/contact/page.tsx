@@ -23,10 +23,10 @@ export default function Contact() {
   }
 
   return (
-    <main className="flex-1 flex flex-col justify-center gap-[2rem] w-full max-w-[45vw] mx-auto">
+    <main className="container mx-auto flex-1 flex flex-col justify-center gap-[2rem] px-6 md:max-w-[60%] xl:max-w-[40%]">
       <section>
-        <h1 className="heading-lg">Get in touch</h1>
-        <h2 className="body-lg">I’m always up for a coffee or kōrero!</h2>
+        <h1 className="heading-lg mb-2">Get in touch</h1>
+        <h2 className="body-lg">Always up for a coffee or kōrero!</h2>
       </section>
       <Separator />
       <section className="flex flex-col gap-4">

@@ -29,7 +29,7 @@ export default function ProjectCard({
       transition={{ duration: 0.1 }}
     >
       <TransitionLink href={href}>
-        <div className="flex flex-col bg-card hover:bg-background border rounded-lg">
+        <div className="flex flex-col bg-card hover:bg-background border rounded-sm">
           <Image src={image} alt="" className="rounded-t-sm" />
           <div className="flex flex-col py-7 md:py-10 px-5 md:px-8 xl:px-7">
             <div className="flex flex-row justify-between items-start mb-5 md:mb-6">
