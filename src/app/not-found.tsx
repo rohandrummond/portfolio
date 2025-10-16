@@ -1,30 +1,5 @@
-'use client'
-
-import { RippleButton } from '@/components/ui/shadcn-io/ripple-button'
-import { HomeIcon } from '@radix-ui/react-icons'
-import { useRouter } from 'next/navigation'
-import { transitionPage } from '@/lib/utils'
+import Error from '@/components/Error'
 
 export default function NotFound() {
-  const router = useRouter()
-
-  function handleHome() {
-    setTimeout(async () => {
-      transitionPage('/', router)
-    }, 300)
-  }
-  return (
-    <div className="flex flex-col flex-1 justify-center items-center">
-      <div className="flex flex-col items-center">
-        <div className="flex flex-col items-center gap-2 mb-8">
-          <h2 className="heading-xl">404</h2>
-          <h3 className="body-lg">Page not found</h3>
-        </div>
-        <RippleButton className="border flex items-center" onClick={handleHome}>
-          <p>Home</p>
-          <HomeIcon />
-        </RippleButton>
-      </div>
-    </div>
-  )
+  return <Error code="404" message="Page not found" />
 }
