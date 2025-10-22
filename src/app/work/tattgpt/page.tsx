@@ -28,7 +28,16 @@ export default function TattGPT() {
         'User authentication and collections with Supabase (including Google OAuth) for saving and managing designs.',
         'Modern architecture with a clean .NET Web API, separating models, services, and data handling in PostgreSQL.',
       ]}
-      images={[imageOne, imageTwo]}
+      images={[
+        {
+          data: imageOne,
+          alt: 'Screenshots of TattGPT UI on desktop and tablet',
+        },
+        {
+          data: imageTwo,
+          alt: 'Screenshots of TattGPT UI on mobile',
+        },
+      ]}
       videoSrc="/videos/tattgpt-demo.mp4"
     />
   )

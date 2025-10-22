@@ -19,28 +19,40 @@ export default function Work() {
           stack={['TypeScript', 'C#', 'PostgreSQL', 'GPT', 'DALL·E 3']}
           blurb="An AI-powered tattoo idea generator that lets users quickly generate and save designs, without worrying about the fuss of prompt engineering."
           href="/work/tattgpt"
-          image={tattgptImage}
+          image={{
+            data: tattgptImage,
+            alt: 'TattGPT saved ideas page on mobile',
+          }}
         />
         <ProjectCard
           name="Tip Tap Toe"
           stack={['C#', 'Gemini']}
           blurb="A console application for improving coding-style typing speed and accuracy. Users choose a language, get assessed, and receive personalised practice."
           href="/work/tip-tap-toe"
-          image={tipTapToeImage}
+          image={{
+            data: tipTapToeImage,
+            alt: 'TipTapToe terminal program on laptop',
+          }}
         />
         <ProjectCard
           name="Arbie Abroad"
           stack={['JavaScript', 'Node.js', 'NoSQL']}
           blurb="A micro CMS for sharing travel memories with family and friends. Users can create and edit posts, manage users, and interact through a built-in commenting system."
           href="/work/arbie-abroad"
-          image={arbieAbroadImage}
+          image={{
+            data: arbieAbroadImage,
+            alt: 'Arbie Abroad home screen map on mobile',
+          }}
         />
         <ProjectCard
           name="Two Cents [WIP]"
           stack={['TypeScript', 'NoSQL', 'PostgreSQL']}
           blurb="A financial dashboard designed for couples who want insights into their shared finances e.g. wealth distribution, cash flow monitoring,  financial goal tracking."
           href="/work/two-cents"
-          image={twoCentsImage}
+          image={{
+            data: twoCentsImage,
+            alt: 'Two Cents dashboard on laptop',
+          }}
         />
       </section>
     </main>

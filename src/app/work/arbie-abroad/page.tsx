@@ -27,7 +27,16 @@ export default function ArbieAbroad() {
         'MongoDB data layer with dedicated collections for users, posts, comments, and image storage via GridFS.',
         'Admin tools for creating posts, managing users, and moderating content.',
       ]}
-      images={[imageOne, imageTwo]}
+      images={[
+        {
+          data: imageOne,
+          alt: 'Screenshots of Arbie Abroad UI on desktop and tablet',
+        },
+        {
+          data: imageTwo,
+          alt: 'Screenshots of Arbie Abroad UI on mobile',
+        },
+      ]}
       videoSrc="/videos/arbie-abroad-demo.mp4"
     />
   )

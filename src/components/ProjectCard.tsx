@@ -5,6 +5,7 @@ import { useMediaQuery } from '@/hooks/use-media-query'
 import TransitionLink from './TransitionLink'
 import ProjectBadge from '@/components/ProjectBadge'
 import { motion } from 'motion/react'
+import { ImageItem } from '@/types/imageItem'
 
 export default function ProjectCard({
   name,
@@ -17,7 +18,7 @@ export default function ProjectCard({
   stack: string[]
   blurb: string
   href: string
-  image: StaticImageData
+  image: ImageItem
 }) {
   const isTabletOrDesktop = useMediaQuery('(min-width:768px)')
   return (
@@ -30,7 +31,7 @@ export default function ProjectCard({
     >
       <TransitionLink href={href}>
         <div className="flex flex-col bg-card hover:bg-background border rounded-sm">
-          <Image src={image} alt="" className="rounded-t-sm" />
+          <Image src={image.data} alt={image.alt} className="rounded-t-sm" />
           <div className="flex flex-col py-7 md:py-10 px-5 md:px-8 xl:px-7">
             <div className="flex flex-row justify-between items-start mb-5 md:mb-6">
               <h3 className="body-lg">{name}</h3>

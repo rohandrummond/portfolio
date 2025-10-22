@@ -8,6 +8,7 @@ import PageEndOptions from './PageEndOptions'
 import { ExternalLinkIcon } from '@radix-ui/react-icons'
 import { motion } from 'motion/react'
 import { Separator } from './ui/separator'
+import { ImageItem } from '@/types/imageItem'
 
 export default function Project({
   name,
@@ -27,7 +28,7 @@ export default function Project({
   description: string
   badges: string[]
   features: string[]
-  images?: StaticImageData[]
+  images?: ImageItem[]
   videoSrc: string
 }) {
   return (
@@ -95,8 +96,8 @@ export default function Project({
           images.map((image, index) => (
             <section key={index}>
               <Image
-                src={image}
-                alt=""
+                src={image.data}
+                alt={image.alt}
                 className="border p-4 bg-card rounded-md"
               />
             </section>

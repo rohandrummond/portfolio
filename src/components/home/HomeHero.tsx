@@ -34,7 +34,7 @@ function HomeHero() {
           <Magnet padding={1500} disabled={false} magnetStrength={1}>
             <Image
               src={face}
-              alt=""
+              alt="Cartoon illustration of Rohan Drummond"
               className="relative w-auto h-[7rem] -z-10"
             />
           </Magnet>

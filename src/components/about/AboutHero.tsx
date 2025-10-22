@@ -37,7 +37,7 @@ export default function AboutHero() {
           </div>
           <Image
             src={image}
-            alt=""
+            alt="Rohan Drummond at a pub in Edinburgh"
             className="w-[220px] h-[220px] object-cover rounded-lg z-1"
           />
         </div>
