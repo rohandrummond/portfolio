@@ -13,6 +13,12 @@ export const metadata: Metadata = {
 export default function Work() {
   return (
     <main className="container mx-auto flex flex-col my-50 px-6">
+      <div className="mb-20">
+        <h1 className="heading-lg text-center mb-2">Personal projects</h1>
+        <h2 className="body-lg text-center">
+          A collection of apps I&apos;ve built and designed in my spare time
+        </h2>
+      </div>
       <section className="grid grid-cols-1 xl:grid-cols-2 gap-12 md:gap-16">
         <ProjectCard
           name="TattGPT"
