@@ -1,6 +1,12 @@
 import ContactHead from '@/components/contact/ContactHead'
 import ContactLinks from '@/components/contact/ContactLinks'
 import { Separator } from '@/components/ui/separator'
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Contact | Rohan Drummond',
+  description: 'Contact Rohan Drummond, New-Zealand based software developer.',
+}
 
 export default function Contact() {
   return (

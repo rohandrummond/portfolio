@@ -4,6 +4,12 @@ import AboutSkills from '@/components/about/AboutSkills'
 import AboutExperience from '@/components/about/AboutExperience'
 import PageEndOptions from '@/components/PageEndOptions'
 import { Separator } from '@/components/ui/separator'
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'About | Rohan Drummond',
+  description: 'About Rohan Drummond, software developer from New Zealand',
+}
 
 export default function About() {
   return (

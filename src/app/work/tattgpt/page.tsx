@@ -1,6 +1,12 @@
 import Project from '@/components/Project'
 import imageOne from '@/../public/images/tattgpt/tattgpt-desktop-screenshots.png'
 import imageTwo from '@/../public/images/tattgpt/tattgpt-screenshots-mobile.png'
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'TattGPT | Rohan Drummond',
+  description: 'TattGPT, built by Rohan Drummond.',
+}
 
 export default function TattGPT() {
   return (

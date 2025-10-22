@@ -1,6 +1,12 @@
 import Project from '@/components/Project'
+import { Metadata } from 'next'
 
-export default function TattGPT() {
+export const metadata: Metadata = {
+  title: 'TipTapToe | Rohan Drummond',
+  description: 'TipTapToe, built by Rohan Drummond.',
+}
+
+export default function TipTapToe() {
   return (
     <Project
       name="Tip Tap Toe"

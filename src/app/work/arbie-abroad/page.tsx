@@ -1,6 +1,12 @@
 import Project from '@/components/Project'
 import imageOne from '@/../public/images/arbie-abroad/arbie-abroad-desktop-screenshots.png'
 import imageTwo from '@/../public/images/arbie-abroad/arbie-abroad-mobile-screenshots.png'
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Arbie Abroad | Rohan Drummond',
+  description: 'Arbie Abroad, built by Rohan Drummond.',
+}
 
 export default function ArbieAbroad() {
   return (
