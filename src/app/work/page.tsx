@@ -9,13 +9,6 @@ export default function Work() {
     <main className="container mx-auto flex flex-col my-50 px-6">
       <section className="grid grid-cols-1 xl:grid-cols-2 gap-12 md:gap-16">
         <ProjectCard
-          name="Two Cents [WIP]"
-          stack={['TypeScript', 'NoSQL', 'PostgreSQL']}
-          blurb="A financial dashboard designed for couples who want insights into their shared finances e.g. wealth distribution, cash flow monitoring,  financial goal tracking."
-          href="/work/two-cents"
-          image={twoCentsImage}
-        />
-        <ProjectCard
           name="TattGPT"
           stack={['TypeScript', 'C#', 'PostgreSQL', 'GPT', 'DALL·E 3']}
           blurb="An AI-powered tattoo idea generator that lets users quickly generate and save designs, without worrying about the fuss of prompt engineering."
@@ -35,6 +28,13 @@ export default function Work() {
           blurb="A micro CMS for sharing travel memories with family and friends. Users can create and edit posts, manage users, and interact through a built-in commenting system."
           href="/work/arbie-abroad"
           image={arbieAbroadImage}
+        />
+        <ProjectCard
+          name="Two Cents [WIP]"
+          stack={['TypeScript', 'NoSQL', 'PostgreSQL']}
+          blurb="A financial dashboard designed for couples who want insights into their shared finances e.g. wealth distribution, cash flow monitoring,  financial goal tracking."
+          href="/work/two-cents"
+          image={twoCentsImage}
         />
       </section>
     </main>
