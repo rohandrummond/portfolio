@@ -50,9 +50,9 @@ export default function Project({
         <section className="flex flex-col justify-between items-start gap-8">
           <div className="flex flex-col">
             {Object.keys(stack).map((key, index) => (
-              <h3 key={index} className="body-lg">
+              <h2 key={index} className="body-lg">
                 {key}: {stack[key]}
-              </h3>
+              </h2>
             ))}
           </div>
           <p className="body w-[90%]">{description}</p>
@@ -78,7 +78,7 @@ export default function Project({
         <section>
           <Card className="flex flex-col justify-center p-6 md:p-8">
             <div className="flex flex-col gap-6">
-              <h4 className="body-lg">Key features</h4>
+              <h2 className="body-lg">Key features</h2>
               <ul className="flex flex-col gap-2 list-disc list-inside">
                 {features.map((value, index) => (
                   <li

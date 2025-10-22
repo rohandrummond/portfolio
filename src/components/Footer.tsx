@@ -15,12 +15,20 @@ export default function Footer() {
         {pathname != '/' ? (
           <>
             <div className="flex flex-row gap-6">
-              <a href="https://github.com/rohandrummond" target="_blank">
+              <a
+                href="https://github.com/rohandrummond"
+                target="_blank"
+                aria-label="Rohan Drummond on GitHub"
+              >
                 <GitHubLogoIcon
                   style={{ width: '24px', height: '24px' }}
                 ></GitHubLogoIcon>
               </a>
-              <a href="https://www.linkedin.com/in/drummondr/" target="_blank">
+              <a
+                href="https://www.linkedin.com/in/drummondr/"
+                target="_blank"
+                aria-label="Rohan Drummond on LinkedIn"
+              >
                 <LinkedInLogoIcon
                   style={{ width: '24px', height: '24px' }}
                 ></LinkedInLogoIcon>

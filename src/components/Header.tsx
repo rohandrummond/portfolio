@@ -1,9 +1,18 @@
 'use client'
 
 import { useState, useEffect } from 'react'
+import Image from 'next/image'
+import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { useMediaQuery } from '@/hooks/use-media-query'
-import Image from 'next/image'
+
+import {
+  Cross2Icon,
+  GitHubLogoIcon,
+  HamburgerMenuIcon,
+  LinkedInLogoIcon,
+} from '@radix-ui/react-icons'
+
 import TransitionLink from './TransitionLink'
 import {
   Drawer,
@@ -16,14 +25,8 @@ import {
   DrawerTitle,
   DrawerTrigger,
 } from '@/components/ui/drawer'
-import {
-  Cross2Icon,
-  GitHubLogoIcon,
-  HamburgerMenuIcon,
-  LinkedInLogoIcon,
-} from '@radix-ui/react-icons'
+
 import face from '../../public/images/notion-face.png'
-import Link from 'next/link'
 
 export default function Header() {
   const isDesktop = useMediaQuery('(min-width:768px)')
@@ -62,12 +65,20 @@ export default function Header() {
           </TransitionLink>
         ) : (
           <div className="flex flex-row gap-6">
-            <a href="https://github.com/rohandrummond" target="_blank">
+            <a
+              href="https://github.com/rohandrummond"
+              target="_blank"
+              aria-label="Rohan Drummond on GitHub"
+            >
               <GitHubLogoIcon
                 style={{ width: '24px', height: '24px' }}
               ></GitHubLogoIcon>
             </a>
-            <a href="https://www.linkedin.com/in/drummondr/" target="_blank">
+            <a
+              href="https://www.linkedin.com/in/drummondr/"
+              target="_blank"
+              aria-label="Rohan Drummond on LinkedIn"
+            >
               <LinkedInLogoIcon
                 style={{ width: '24px', height: '24px' }}
               ></LinkedInLogoIcon>
@@ -76,13 +87,28 @@ export default function Header() {
         )}
         {isDesktop ? (
           <nav className="flex flex-row gap-[50px]">
-            <TransitionLink href="/about" className="body hover:underline">
+            <TransitionLink
+              href="/about"
+              className={`body hover:underline ${
+                path.includes('about') && 'underline'
+              }`}
+            >
               About
             </TransitionLink>
-            <TransitionLink href="/work" className="body hover:underline">
+            <TransitionLink
+              href="/work"
+              className={`body hover:underline ${
+                path.includes('work') && 'underline'
+              }`}
+            >
               Work
             </TransitionLink>
-            <TransitionLink href="/contact" className="body hover:underline">
+            <TransitionLink
+              href="/contact"
+              className={`body hover:underline ${
+                path.includes('contact') && 'underline'
+              }`}
+            >
               Contact
             </TransitionLink>
           </nav>

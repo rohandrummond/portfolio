@@ -23,7 +23,7 @@ function ContactLinks() {
   return (
     <section className="flex flex-col gap-4">
       <div className="flex flex-row justify-between items-center">
-        <p className="body-lg">Email</p>
+        <h3 className="body-lg">Email</h3>
         <TooltipProvider>
           <Tooltip open={open}>
             <TooltipTrigger asChild>
@@ -54,7 +54,7 @@ function ContactLinks() {
       </div>
 
       <div className="flex flex-row justify-between items-center">
-        <p className="body-lg">GitHub</p>
+        <h3 className="body-lg">GitHub</h3>
         <motion.div
           whileHover={{
             scale: 1.025,
@@ -75,7 +75,7 @@ function ContactLinks() {
         </motion.div>
       </div>
       <div className="flex flex-row justify-between items-center">
-        <p className="body-lg">LinkedIn</p>
+        <h3 className="body-lg">LinkedIn</h3>
         <motion.div
           whileHover={{
             scale: 1.025,
