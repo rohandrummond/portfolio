@@ -13,7 +13,7 @@ import {
   LinkedInLogoIcon,
 } from '@radix-ui/react-icons'
 
-import TransitionLink from './TransitionLink'
+import TransitionLink from '@/components/common/TransitionLink'
 import {
   Drawer,
   DrawerClose,
@@ -26,7 +26,7 @@ import {
   DrawerTrigger,
 } from '@/components/ui/drawer'
 
-import face from '../../public/images/notion-face.png'
+import face from '../../../public/images/notion-face.png'
 
 export default function Header() {
   const isDesktop = useMediaQuery('(min-width:768px)')

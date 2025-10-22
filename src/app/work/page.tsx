@@ -1,4 +1,4 @@
-import ProjectCard from '@/components/ProjectCard'
+import ProjectCard from '@/components/pages/work/ProjectCard'
 import twoCentsImage from '@/../public/images/two-cents/two-cents-card.png'
 import tattgptImage from '@/../public/images/tattgpt/tattgpt-card.png'
 import tipTapToeImage from '@/../public/images/tip-tap-toe/tip-tap-toe-card.png'

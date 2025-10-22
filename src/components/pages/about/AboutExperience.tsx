@@ -1,4 +1,4 @@
-import ExperienceCard from '@/components/ExperienceCard'
+import ExperienceCard from '@/components/pages/about/ExperienceCard'
 import { ScrollArea } from '@/components/ui/scroll-area'
 import { Separator } from '@/components/ui/separator'
 import { ArrowRightIcon, ArrowDownIcon, PlusIcon } from '@radix-ui/react-icons'

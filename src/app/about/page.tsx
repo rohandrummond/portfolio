@@ -1,8 +1,8 @@
-import AboutHero from '@/components/about/AboutHero'
-import AboutEducation from '@/components/about/AboutEducation'
-import AboutSkills from '@/components/about/AboutSkills'
-import AboutExperience from '@/components/about/AboutExperience'
-import PageEndOptions from '@/components/PageEndOptions'
+import AboutHero from '@/components/pages/about/AboutHero'
+import AboutEducation from '@/components/pages/about/AboutEducation'
+import AboutSkills from '@/components/pages/about/AboutSkills'
+import AboutExperience from '@/components/pages/about/AboutExperience'
+import PageEndOptions from '@/components/common/PageEndOptions'
 import { Separator } from '@/components/ui/separator'
 import type { Metadata } from 'next'
 

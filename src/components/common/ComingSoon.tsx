@@ -17,19 +17,19 @@ function ComingSoon({ githubUrl }: { githubUrl: string }) {
       <div className="flex flex-col items-center">
         <div className="flex flex-col items-center gap-10">
           <h2 className="heading-xl">Coming soon</h2>
-          <p className="body-text text-center max-w-120">
-            Something about currently working on the project while I balance
-            studying at Dev Academy. Stay turned!
+          <p className="body text-center max-w-90">
+            A new project I&apos;m working on in my spare time during Dev
+            Academy Aotearoa.
           </p>
         </div>
-        <div className="flex flex-row gap-4 mt-12">
+        <div className="flex flex-row gap-8 mt-12">
           <RippleButton
-            className="border flex items-center"
+            className="body border flex items-center py-6 px-5"
             onClick={handleWork}
           >
             <p>Projects</p>
           </RippleButton>
-          <RippleButton className="border flex items-center">
+          <RippleButton className="body border flex items-center !py-6 !px-5">
             <a href={githubUrl} target="_blank">
               <p>GitHub</p>
             </a>

@@ -2,8 +2,8 @@
 
 import Image, { StaticImageData } from 'next/image'
 import { useMediaQuery } from '@/hooks/use-media-query'
-import TransitionLink from './TransitionLink'
-import ProjectBadge from '@/components/ProjectBadge'
+import TransitionLink from '@/components/common/TransitionLink'
+import ProjectBadge from '@/components/pages/work/ProjectBadge'
 import { motion } from 'motion/react'
 import { ImageItem } from '@/types/imageItem'
 

@@ -1,4 +1,4 @@
-import SkillsAccordion from '@/components/SkillsAccordion'
+import SkillsAccordion from '@/components/pages/about/SkillsAccordion'
 import { Accordion, AccordionItem } from '@/components/ui/accordion'
 
 export default function AboutSkills() {

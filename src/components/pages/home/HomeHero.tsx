@@ -2,8 +2,8 @@
 
 import { useMediaQuery } from '@/hooks/use-media-query'
 import Image from 'next/image'
-import face from '../../../public/images/notion-face.png'
-import Magnet from '@/components/Magnet'
+import face from '../../../../public/images/notion-face.png'
+import Magnet from '@/components/ui/Magnet'
 import { motion } from 'motion/react'
 
 function HomeHero() {

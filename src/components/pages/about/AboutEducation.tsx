@@ -1,4 +1,4 @@
-import EducationCard from '@/components/EducationCard'
+import EducationCard from '@/components/pages/about/EducationCard'
 
 export default function AboutEducation() {
   return (

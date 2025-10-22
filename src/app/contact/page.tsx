@@ -1,5 +1,5 @@
-import ContactHead from '@/components/contact/ContactHead'
-import ContactLinks from '@/components/contact/ContactLinks'
+import ContactHead from '@/components/pages/contact/ContactHead'
+import ContactLinks from '@/components/pages/contact/ContactLinks'
 import { Separator } from '@/components/ui/separator'
 import { Metadata } from 'next'
 
