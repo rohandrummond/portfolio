@@ -28,13 +28,13 @@ export default function PageEndOptions({ buttonText }: { buttonText: string }) {
       </h3>
       <div className="w-full xl:w-auto flex flex-row justify-center md:justify-end gap-6">
         <RippleButton
-          className="body border hover:bg-background"
+          className="body border hover:bg-background py-6 px-5"
           onClick={navigateToWork}
         >
           {buttonText}
         </RippleButton>
         <RippleButton
-          className="body border gap-1 bg-background hover:bg-card"
+          className="body border rounded-lg bg-background hover:bg-card !py-6 !px-5"
           onClick={scrollToTop}
         >
           Scroll to top<ArrowUpIcon></ArrowUpIcon>

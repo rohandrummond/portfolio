@@ -13,7 +13,7 @@ export default function AboutExperience() {
           <ArrowDownIcon></ArrowDownIcon>
         </div>
       </div>
-      <ScrollArea className="h-[80vh] md:h-[70vh] w-full bg-card border rounded-xl">
+      <ScrollArea className="h-[80vh] md:h-[70vh] w-full bg-card border rounded-lg">
         <div className="flex flex-col gap-8 md:gap-10 xl:gap-12 py-6 md:py-8 xl:py-10">
           <ExperienceCard
             position="Web Developer (Volunteer)"

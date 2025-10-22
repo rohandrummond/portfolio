@@ -63,7 +63,10 @@ export default function Project({
             }}
             transition={{ duration: 0.1 }}
           >
-            <Button className="border hover:bg-background" asChild>
+            <Button
+              className="border rounded-lg hover:bg-background !py-6 !px-4"
+              asChild
+            >
               <a
                 href={repo}
                 target="_blank"
@@ -76,7 +79,7 @@ export default function Project({
           </motion.div>
         </section>
         <section>
-          <Card className="flex flex-col justify-center p-6 md:p-8">
+          <Card className="flex flex-col justify-center rounded-lg p-6 md:p-8">
             <div className="flex flex-col gap-6">
               <h2 className="body-lg">Key features</h2>
               <ul className="flex flex-col gap-2 list-disc list-inside">
@@ -98,7 +101,7 @@ export default function Project({
               <Image
                 src={image.data}
                 alt={image.alt}
-                className="border p-4 bg-card rounded-md"
+                className="border p-4 bg-card rounded-lg"
               />
             </section>
           ))}

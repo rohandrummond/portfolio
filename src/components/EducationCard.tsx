@@ -33,7 +33,7 @@ export default function EducationCard({
       }}
       transition={{ duration: 0.1 }}
     >
-      <Card className="flex flex-col gap-4 hover:bg-background min-h-full">
+      <Card className="flex flex-col gap-4 rounded-lg hover:bg-background min-h-full">
         <CardHeader>
           <div className="flex flex-col mb-2">
             <CardDescription className="body">{year}</CardDescription>

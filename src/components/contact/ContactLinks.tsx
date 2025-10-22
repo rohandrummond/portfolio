@@ -35,7 +35,7 @@ function ContactLinks() {
                 transition={{ duration: 0.1 }}
               >
                 <Button
-                  className="min-w-[100px] border hover:bg-background cursor-pointer"
+                  className="min-w-[110px] border rounded-lg hover:bg-background cursor-pointer p-6"
                   asChild
                   onClick={copyEmail}
                 >
@@ -62,7 +62,10 @@ function ContactLinks() {
           }}
           transition={{ duration: 0.1 }}
         >
-          <Button className="min-w-[100px] border hover:bg-background" asChild>
+          <Button
+            className="min-w-[110px] border rounded-lg hover:bg-background  p-6"
+            asChild
+          >
             <a
               href="https://github.com/rohandrummond"
               target="_blank"
@@ -83,7 +86,10 @@ function ContactLinks() {
           }}
           transition={{ duration: 0.1 }}
         >
-          <Button className="min-w-[100px] border hover:bg-background" asChild>
+          <Button
+            className="min-w-[110px] border rounded-lg hover:bg-background  p-6"
+            asChild
+          >
             <a
               href="https://www.linkedin.com/in/drummondr/"
               target="_blank"
