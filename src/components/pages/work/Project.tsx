@@ -1,13 +1,12 @@
 'use client'
 
-import Image, { StaticImageData } from 'next/image'
+import Image from 'next/image'
 import { Card } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import ProjectBadge from '@/components/pages/work/ProjectBadge'
-import PageEndOptions from './common/PageEndOptions'
+import PageEndOptions from '@/components/common/PageEndOptions'
 import { ExternalLinkIcon } from '@radix-ui/react-icons'
 import { motion } from 'motion/react'
-import { Separator } from './ui/separator'
 import { ImageItem } from '@/types/imageItem'
 
 export default function Project({

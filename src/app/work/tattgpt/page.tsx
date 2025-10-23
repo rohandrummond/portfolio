@@ -1,4 +1,4 @@
-import Project from '@/components/Project'
+import Project from '@/components/pages/work/Project'
 import imageOne from '@/../public/images/tattgpt/tattgpt-desktop-screenshots.png'
 import imageTwo from '@/../public/images/tattgpt/tattgpt-screenshots-mobile.png'
 import { Metadata } from 'next'
