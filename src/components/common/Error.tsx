@@ -1,11 +1,17 @@
 'use client'
 
-import { RippleButton } from '@/components/ui/shadcn-io/ripple-button'
-import { HomeIcon } from '@radix-ui/react-icons'
 import { useRouter } from 'next/navigation'
 import { transitionPage } from '@/lib/utils'
+import { RippleButton } from '@/components/ui/shadcn-io/ripple-button'
+import { HomeIcon } from '@radix-ui/react-icons'
 
-function Error({ code, message }: { code: string; message: string }) {
+export default function Error({
+  code,
+  message,
+}: {
+  code: string
+  message: string
+}) {
   const router = useRouter()
 
   function handleHome() {
@@ -28,5 +34,3 @@ function Error({ code, message }: { code: string; message: string }) {
     </div>
   )
 }
-
-export default Error

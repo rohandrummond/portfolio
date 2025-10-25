@@ -1,12 +1,12 @@
 'use client'
 
-import { useMediaQuery } from '@/hooks/use-media-query'
 import Image from 'next/image'
-import face from '../../../../public/images/notion-face.png'
+import { useMediaQuery } from '@/hooks/use-media-query'
 import Magnet from '@/components/ui/Magnet'
 import { motion } from 'motion/react'
+import face from '../../../../public/images/notion-face.png'
 
-function HomeHero() {
+export default function HomeHero() {
   const isTouch = useMediaQuery('(pointer: coarse)')
 
   return (
@@ -45,5 +45,3 @@ function HomeHero() {
     </motion.div>
   )
 }
-
-export default HomeHero

@@ -1,5 +1,5 @@
-import ComingSoon from '@/components/common/ComingSoon'
 import { Metadata } from 'next'
+import ComingSoon from '@/components/common/ComingSoon'
 
 export const metadata: Metadata = {
   title: 'Two Cents | Rohan Drummond',

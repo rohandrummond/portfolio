@@ -5,14 +5,12 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { useMediaQuery } from '@/hooks/use-media-query'
-
 import {
   Cross2Icon,
   GitHubLogoIcon,
   HamburgerMenuIcon,
   LinkedInLogoIcon,
 } from '@radix-ui/react-icons'
-
 import TransitionLink from '@/components/common/TransitionLink'
 import {
   Drawer,
@@ -25,7 +23,6 @@ import {
   DrawerTitle,
   DrawerTrigger,
 } from '@/components/ui/drawer'
-
 import face from '../../../public/images/notion-face.png'
 
 export default function Header() {

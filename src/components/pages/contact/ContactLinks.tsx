@@ -11,7 +11,7 @@ import {
 } from '@/components/ui/tooltip'
 import { motion } from 'motion/react'
 
-function ContactLinks() {
+export default function ContactLinks() {
   const [open, setOpen] = useState(false)
 
   function copyEmail(e: MouseEvent<HTMLButtonElement>) {
@@ -104,5 +104,3 @@ function ContactLinks() {
     </section>
   )
 }
-
-export default ContactLinks

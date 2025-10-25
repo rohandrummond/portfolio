@@ -1,7 +1,7 @@
+import { Metadata } from 'next'
 import Project from '@/components/pages/work/Project'
 import imageOne from '@/../public/images/arbie-abroad/arbie-abroad-desktop-screenshots.png'
 import imageTwo from '@/../public/images/arbie-abroad/arbie-abroad-mobile-screenshots.png'
-import { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Arbie Abroad | Rohan Drummond',

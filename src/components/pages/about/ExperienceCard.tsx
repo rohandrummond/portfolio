@@ -1,12 +1,4 @@
 import { ReactNode } from 'react'
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardAction,
-  CardHeader,
-  CardTitle,
-} from '@/components/ui/card'
 
 export default function ExperienceCard({
   position,

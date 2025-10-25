@@ -1,10 +1,10 @@
 'use client'
+
 import { usePathname } from 'next/navigation'
 import { GitHubLogoIcon, LinkedInLogoIcon } from '@radix-ui/react-icons'
 
 export default function Footer() {
   const pathname = usePathname()
-
   return (
     <>
       <footer

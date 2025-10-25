@@ -5,7 +5,7 @@ import { transitionPage } from '@/lib/utils'
 import { RippleButton } from '@/components/ui/shadcn-io/ripple-button'
 import { ExternalLinkIcon } from '@radix-ui/react-icons'
 
-function ComingSoon({ githubUrl }: { githubUrl: string }) {
+export default function ComingSoon({ githubUrl }: { githubUrl: string }) {
   const router = useRouter()
   function handleWork() {
     setTimeout(async () => {
@@ -40,5 +40,3 @@ function ComingSoon({ githubUrl }: { githubUrl: string }) {
     </div>
   )
 }
-
-export default ComingSoon

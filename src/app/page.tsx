@@ -1,7 +1,5 @@
 import HomeHero from '@/components/pages/home/HomeHero'
 
-function Home() {
+export default function Home() {
   return <HomeHero />
 }
-
-export default Home

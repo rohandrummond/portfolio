@@ -1,4 +1,4 @@
-function ContactHead() {
+export default function ContactHead() {
   return (
     <section>
       <h1 className="heading-lg mb-2">Get in touch</h1>
@@ -6,5 +6,3 @@ function ContactHead() {
     </section>
   )
 }
-
-export default ContactHead

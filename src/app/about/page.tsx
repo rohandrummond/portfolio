@@ -1,10 +1,10 @@
+import type { Metadata } from 'next'
 import AboutHero from '@/components/pages/about/AboutHero'
 import AboutEducation from '@/components/pages/about/AboutEducation'
 import AboutSkills from '@/components/pages/about/AboutSkills'
 import AboutExperience from '@/components/pages/about/AboutExperience'
 import PageEndOptions from '@/components/common/PageEndOptions'
 import { Separator } from '@/components/ui/separator'
-import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'About | Rohan Drummond',
