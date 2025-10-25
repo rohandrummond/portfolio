@@ -28,6 +28,7 @@ import face from '../../../public/images/notion-face.png'
 export default function Header() {
   const isDesktop = useMediaQuery('(min-width:768px)')
   const path = usePathname()
+  console.log(path)
   const [scrolled, setScrolled] = useState(false)
   const [drawerOpen, setDrawerOpen] = useState(false)
 
@@ -87,7 +88,7 @@ export default function Header() {
             <TransitionLink
               href="/about"
               className={`body hover:underline ${
-                path.includes('about') && 'underline'
+                path === '/about' && 'underline'
               }`}
             >
               About
@@ -95,7 +96,7 @@ export default function Header() {
             <TransitionLink
               href="/work"
               className={`body hover:underline ${
-                path.includes('work') && 'underline'
+                path === '/work' && 'underline'
               }`}
             >
               Work
@@ -103,7 +104,7 @@ export default function Header() {
             <TransitionLink
               href="/contact"
               className={`body hover:underline ${
-                path.includes('contact') && 'underline'
+                path === '/contact' && 'underline'
               }`}
             >
               Contact

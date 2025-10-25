@@ -26,8 +26,11 @@ export default function Error({
           <h2 className="heading-xl">{code}</h2>
           <h3 className="body-lg">{message}</h3>
         </div>
-        <RippleButton className="border flex items-center" onClick={handleHome}>
-          <p>Home</p>
+        <RippleButton
+          className="border flex items-center !py-6 !px-5"
+          onClick={handleHome}
+        >
+          <p className="body">Home</p>
           <HomeIcon />
         </RippleButton>
       </div>

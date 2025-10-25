@@ -13,13 +13,13 @@ export default function ComingSoon({ githubUrl }: { githubUrl: string }) {
     }, 300)
   }
   return (
-    <div className="flex flex-col flex-1 justify-center items-center">
+    <div className="flex flex-col flex-1 justify-center items-center px-6">
       <div className="flex flex-col items-center">
         <div className="flex flex-col items-center gap-10">
-          <h2 className="heading-xl">Coming soon</h2>
-          <p className="body text-center max-w-90">
-            A new project I&apos;m working on in my spare time during Dev
-            Academy Aotearoa.
+          <h2 className="heading-lg text-center">Coming soon</h2>
+          <p className="body text-center max-w-80 md:max-w-85 lg:max-w-95">
+            A new project I&apos;m working on in my spare time while studying at
+            Dev Academy Aotearoa!
           </p>
         </div>
         <div className="flex flex-row gap-8 mt-12">
