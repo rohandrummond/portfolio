@@ -37,7 +37,7 @@ export default function Footer() {
             <p className="body-sm">© Rohan Drummond 2025</p>
           </>
         ) : (
-          <p className="body-sm">[ Deployed with Next.js and AWS ]</p>
+          <p className="body-sm">[ Built with Next.js and deployed on AWS ]</p>
         )}
       </footer>
     </>

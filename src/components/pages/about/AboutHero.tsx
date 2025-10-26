@@ -13,12 +13,11 @@ export default function AboutHero() {
       </h1>
       <div className="flex flex-col lg:flex-row items-start lg:items-end justify-between">
         <p className="body pb-12 md:w-2/3 lg:w-1/2 xl:w-1/3 lg:pb-0">
-          I found my way into software later in life, after realising my old
-          career wasn’t where I wanted to be. That shift gave me a fresh
-          perspective and a bit of grit, and I’ve been hooked on building and
-          problem-solving ever since. Outside of coding, I’m usually at the gym,
-          fishing, brewing a cheeky beer, or hanging out with my partner, mates,
-          and whānau.
+          I’m a passionate and driven junior developer based in Tāmaki Makaurau.
+          After teaching myself to code, volunteering and travelling for the
+          last 2 years, I’m now studying at Dev Academy Aotearoa. When I’m not
+          coding, you’ll probably find me out fishing, at the gym or brewing my
+          next batch of home brew 🍻
         </p>
         <div className="w-full lg:w-auto flex flex-row-reverse lg:flex-row justify-between items-end lg:gap-6">
           <div className="flex items-center gap-1">
