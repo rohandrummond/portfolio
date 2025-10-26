@@ -23,7 +23,7 @@ export default function HomeHero() {
       transition={{
         ease: 'easeOut',
         duration: 0.25,
-        delay: 1,
+        delay: 0.5,
       }}
     >
       <div className="flex flex-col lg:flex-row items-center lg:items-end gap-8 lg:gap-10">
