@@ -68,7 +68,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${neueMontreal.variable} flex flex-col min-h-screen`}>
+      <body
+        className={`${neueMontreal.variable} flex flex-col min-h-dvh xl:min-h-screen`}
+      >
         <div
           id="transition-overlay"
           className="bg-background fixed top-0 left-0 z-20 h-screen w-screen scale-x-0 origin-left transition-transform duration-500 ease-in-out"
