@@ -27,7 +27,7 @@ export default function Error({
           <h3 className="body-lg">{message}</h3>
         </div>
         <RippleButton
-          className="border flex items-center !py-6 !px-5"
+          className="border flex items-center !py-5 !px-4 md:!py-6 md:!px-5"
           onClick={handleHome}
         >
           <p className="body">Home</p>

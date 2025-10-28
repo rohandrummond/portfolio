@@ -24,12 +24,12 @@ export default function ComingSoon({ githubUrl }: { githubUrl: string }) {
         </div>
         <div className="flex flex-row gap-8 mt-12">
           <RippleButton
-            className="body border flex items-center py-6 px-5"
+            className="body border flex items-center py-5 px-4 md:py-6 md:px-5"
             onClick={handleWork}
           >
             <p>Projects</p>
           </RippleButton>
-          <RippleButton className="body border flex items-center !py-6 !px-5">
+          <RippleButton className="body border flex items-center py-5 px-4 md:py-6 md:px-5">
             <a href={githubUrl} target="_blank">
               <p>GitHub</p>
             </a>
