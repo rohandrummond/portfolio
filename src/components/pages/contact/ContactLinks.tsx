@@ -35,7 +35,7 @@ export default function ContactLinks() {
                 transition={{ duration: 0.1 }}
               >
                 <Button
-                  className="min-w-[110px] border rounded-lg hover:bg-background cursor-pointer p-6"
+                  className="min-w-[105px] border rounded-lg hover:bg-background cursor-pointer py-5 md:py-6"
                   asChild
                   onClick={copyEmail}
                 >
@@ -63,7 +63,7 @@ export default function ContactLinks() {
           transition={{ duration: 0.1 }}
         >
           <Button
-            className="min-w-[110px] border rounded-lg hover:bg-background  p-6"
+            className="min-w-[105px] border rounded-lg hover:bg-background py-5 md:py-6"
             asChild
           >
             <a
@@ -87,7 +87,7 @@ export default function ContactLinks() {
           transition={{ duration: 0.1 }}
         >
           <Button
-            className="min-w-[110px] border rounded-lg hover:bg-background  p-6"
+            className="min-w-[105px] border rounded-lg hover:bg-background py-5 md:py-6"
             asChild
           >
             <a

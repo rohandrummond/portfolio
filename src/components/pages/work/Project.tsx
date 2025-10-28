@@ -63,7 +63,7 @@ export default function Project({
             transition={{ duration: 0.1 }}
           >
             <Button
-              className="border rounded-lg hover:bg-background !py-6 !px-4"
+              className="border rounded-lg hover:bg-background !py-5 !px-4 md:!py-6 md:!px-5"
               asChild
             >
               <a
