@@ -5,7 +5,11 @@ import { useMediaQuery } from '@/hooks/use-media-query'
 import TransitionLink from '@/components/common/TransitionLink'
 import ProjectBadge from '@/components/pages/work/ProjectBadge'
 import { motion } from 'motion/react'
-import { ImageItem } from '@/types/ImageItem'
+
+type ImageItem = {
+  data: string
+  alt: string
+}
 
 export default function ProjectCard({
   name,

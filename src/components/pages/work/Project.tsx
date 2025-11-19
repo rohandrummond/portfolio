@@ -7,7 +7,11 @@ import ProjectBadge from '@/components/pages/work/ProjectBadge'
 import PageEndOptions from '@/components/common/PageEndOptions'
 import { ExternalLinkIcon } from '@radix-ui/react-icons'
 import { motion } from 'motion/react'
-import { ImageItem } from '../../../types/ImageItem'
+
+type ImageItem = {
+  data: string
+  alt: string
+}
 
 export default function Project({
   name,
