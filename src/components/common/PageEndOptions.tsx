@@ -1,12 +1,14 @@
 'use client'
 
-import { useRouter } from 'next/navigation'
+import { useRouter, usePathname } from 'next/navigation'
 import { transitionPage } from '@/lib/utils'
 import { RippleButton } from '@/components/ui/shadcn-io/ripple-button'
 import { ArrowUpIcon } from '@radix-ui/react-icons'
 
 export default function PageEndOptions({ buttonText }: { buttonText: string }) {
   const router = useRouter()
+  const pathname = usePathname()
+  console.log(pathname)
   function navigateToWork() {
     setTimeout(async () => {
       transitionPage('/work', router)
@@ -33,12 +35,14 @@ export default function PageEndOptions({ buttonText }: { buttonText: string }) {
         >
           {buttonText}
         </RippleButton>
-        <RippleButton
-          className="body border rounded-lg bg-background hover:bg-card !py-5 !px-4 md:!py-6 md:!px-5"
-          onClick={scrollToTop}
-        >
-          Scroll to top<ArrowUpIcon></ArrowUpIcon>
-        </RippleButton>
+        {pathname === '/about' && (
+          <RippleButton
+            className="body border rounded-lg bg-background hover:bg-card !py-5 !px-4 md:!py-6 md:!px-5"
+            onClick={scrollToTop}
+          >
+            Scroll to top<ArrowUpIcon></ArrowUpIcon>
+          </RippleButton>
+        )}
       </div>
     </section>
   )
