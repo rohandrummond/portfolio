@@ -1,13 +1,13 @@
 'use client'
 
-import Image from 'next/image'
+import Image, { StaticImageData } from 'next/image'
 import { useMediaQuery } from '@/hooks/use-media-query'
 import TransitionLink from '@/components/common/TransitionLink'
 import ProjectBadge from '@/components/pages/work/ProjectBadge'
 import { motion } from 'motion/react'
 
-type ImageItem = {
-  data: string
+export type ImageItem = {
+  data: StaticImageData
   alt: string
 }
 

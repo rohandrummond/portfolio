@@ -1,6 +1,6 @@
 'use client'
 
-import Image from 'next/image'
+import Image, { StaticImageData } from 'next/image'
 import { Card } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import ProjectBadge from '@/components/pages/work/ProjectBadge'
@@ -9,7 +9,7 @@ import { ExternalLinkIcon } from '@radix-ui/react-icons'
 import { motion } from 'motion/react'
 
 type ImageItem = {
-  data: string
+  data: StaticImageData
   alt: string
 }
 
