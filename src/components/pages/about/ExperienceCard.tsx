@@ -24,7 +24,7 @@ export default function ExperienceCard({
       </div>
       <ul className="flex flex-col gap-1 list-[square] list-inside pl-1">
         {bullets.map((value, index) => (
-          <li key={index} className="body">
+          <li key={index} className="body leading-1.5">
             {value}
           </li>
         ))}

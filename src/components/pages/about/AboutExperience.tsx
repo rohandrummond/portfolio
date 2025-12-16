@@ -16,10 +16,25 @@ export default function AboutExperience() {
       <ScrollArea className="h-[80vh] md:h-[70vh] w-full bg-card border rounded-lg">
         <div className="flex flex-col gap-8 md:gap-10 xl:gap-12 py-6 md:py-8 xl:py-10">
           <ExperienceCard
-            position="Web Developer (Volunteer)"
+            position="Graduate"
+            company="Dev Academy Aotearoa"
+            duration="August 2025 - December 2025"
+            bullets={[
+              'Approximately 800 hours of hands on learning, across 9 scoped projects in a simulated work environment',
+              'Built and deployed full stack applications using React, Node.js, and PostgreSQL ',
+              'Used Git and GitHub daily with branching, pull requests and issues',
+              'Wrote unit and basic integration tests with Vitest, Jest, and Supertest to improve application reliability',
+              'Led daily stand ups and retros and participated in code reviews',
+              'Strengthened communication, feedback, and conflict management in the courses Human Skills module',
+            ]}
+          />
+          <Separator />
+          <ExperienceCard
+            position="Web Developer"
             company="Manta Watch NZ"
             duration="May 2024 - Present"
             bullets={[
+              'A mix of paid and volunteer work maintaining an existing website and database',
               'Extended site functionality and built/modified custom REST API endpoints with PHP',
               'Refactored and added JavaScript functionality to support user interactions',
               'Delivered tailored data through custom MySQL database queries',

@@ -5,7 +5,7 @@ export default function AboutSkills() {
   return (
     <section className="flex flex-col md:flex-row justify-between items-start md:items-center md:gap-20">
       <h2 className="heading-lg mb-8 md:w-full">
-        Tech and tools I have worked with so far
+        Some of the tech used in my projects
       </h2>
       <Accordion type="single" collapsible className="w-full">
         <AccordionItem value="item-1" className="pl-1">

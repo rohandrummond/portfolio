@@ -11,7 +11,7 @@ export default function AboutEducation() {
           course="Applied Software Development"
           provider="Dev Academy Aotearoa"
           description="An intensive, 17-week bootcamp focused on learning the front and back-end skills required for building full-stack web applications."
-          year="2025 (Present)"
+          year="2025"
           link="https://devacademy.co.nz/"
         />
         <EducationCard
