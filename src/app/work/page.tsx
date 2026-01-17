@@ -1,6 +1,6 @@
 import { Metadata } from 'next'
 import ProjectCard from '@/components/pages/work/ProjectCard'
-import twoCentsImage from '@/../public/images/two-cents/two-cents-card.png'
+import mithrandirImage from '@/../public/images/mithrandir/mithrandir-card.png'
 import tattgptImage from '@/../public/images/tattgpt/tattgpt-card.png'
 import tipTapToeImage from '@/../public/images/tip-tap-toe/tip-tap-toe-card.png'
 import arbieAbroadImage from '@/../public/images/arbie-abroad/arbie-abroad-card.png'
@@ -21,9 +21,19 @@ export default function Work() {
       </div>
       <section className="grid grid-cols-1 xl:grid-cols-2 gap-12 md:gap-16">
         <ProjectCard
+          name="Mithrandir"
+          stack={['.NET', 'Next.js']}
+          blurb="An API key and rate limiting REST API I built to learn more about .NET fundamentals, Redis and infrastructure tools like AWS, Docker and Terraform."
+          href="/work/tattgpt"
+          image={{
+            data: mithrandirImage,
+            alt: 'TattGPT saved ideas page on mobile',
+          }}
+        />
+        <ProjectCard
           name="TattGPT"
-          stack={['TypeScript', 'C#', 'PostgreSQL', 'GPT', 'DALL·E 3']}
-          blurb="An AI-powered tattoo idea generator that lets users quickly generate and save designs, without worrying about the fuss of prompt engineering."
+          stack={['.NET', 'Angular', 'PostgreSQL', 'OpenAI']}
+          blurb="An AI powered tattoo idea generator. A project for learning about .NET web APIs, Angular, rate limiting and OpenAI's image and text generation models."
           href="/work/tattgpt"
           image={{
             data: tattgptImage,
@@ -32,8 +42,8 @@ export default function Work() {
         />
         <ProjectCard
           name="Tip Tap Toe"
-          stack={['C#', 'Gemini']}
-          blurb="A console application for improving coding-style typing speed and accuracy. Users choose a language, get assessed, and receive personalised practice."
+          stack={['.NET', 'Gemini']}
+          blurb="A console app for practicing and improving code typing speed, built to explore C# and generative AI. My first experience working with a strongly typed language."
           href="/work/tip-tap-toe"
           image={{
             data: tipTapToeImage,
@@ -42,22 +52,12 @@ export default function Work() {
         />
         <ProjectCard
           name="Arbie Abroad"
-          stack={['JavaScript', 'Node.js', 'NoSQL']}
-          blurb="A micro CMS for sharing travel memories with family and friends. Users can create and edit posts, manage users, and interact through a built-in commenting system."
+          stack={['React', 'Express', 'MongoDB']}
+          blurb="My first self directed project, a micro CMS for sharing travel memories with family and friends. Built to cement learning from on an online bootcamp I had completed."
           href="/work/arbie-abroad"
           image={{
             data: arbieAbroadImage,
             alt: 'Arbie Abroad home screen map on mobile',
-          }}
-        />
-        <ProjectCard
-          name="Two Cents [WIP]"
-          stack={['TypeScript', 'NoSQL', 'PostgreSQL']}
-          blurb="A financial dashboard designed for couples who want insights into their shared finances e.g. wealth distribution, cash flow monitoring,  financial goal tracking."
-          href="/work/two-cents"
-          image={{
-            data: twoCentsImage,
-            alt: 'Two Cents dashboard on laptop',
           }}
         />
       </section>
