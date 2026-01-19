@@ -22,12 +22,12 @@ export default function Work() {
       <section className="grid grid-cols-1 xl:grid-cols-2 gap-12 md:gap-16">
         <ProjectCard
           name="Mithrandir"
-          stack={['.NET', 'Next.js']}
+          stack={['.NET', 'Next.js', 'PostgreSQL', 'Redis']}
           blurb="An API key and rate limiting REST API I built to learn more about .NET fundamentals, Redis and infrastructure tools like AWS, Docker and Terraform."
-          href="/work/tattgpt"
+          href="/work/mithrandir"
           image={{
             data: mithrandirImage,
-            alt: 'TattGPT saved ideas page on mobile',
+            alt: 'Mithrandir web dashboard on laptop',
           }}
         />
         <ProjectCard
