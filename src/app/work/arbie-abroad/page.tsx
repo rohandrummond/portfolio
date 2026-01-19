@@ -13,14 +13,10 @@ export default function ArbieAbroad() {
     <Project
       name="Arbie Abroad"
       repo="https://github.com/rohandrummond/arbie-abroad"
-      stack={{
-        'Front-end': 'React',
-        API: 'Express',
-        Database: 'MongoDB',
-      }}
-      description="Arbie Abroad is a full-stack travel blog app I built as a lightweight and convenient way for sharing and preserving my travel memories. It features a React front end and an Express API, with posts, images, and user data stored in MongoDB,."
+      firstParagraph="Arbie Abroad is a full-stack travel blog app I built as a lightweight and convenient way for sharing and preserving my travel memories. It features a React front end and an Express API, with posts, images, and user data stored in MongoDB,."
+      secondParagraph="Arbie Abroad is a full-stack travel blog app I built as a lightweight and convenient way for sharing and preserving my travel memories. It features a React front end and an Express API, with posts, images, and user data stored in MongoDB,."
       badges={['JavaScript', 'Node.js', 'NoSQL']}
-      features={[
+      highlights={[
         'Interactive world map built with React Simple Maps for exploring travel posts.',
         'User authentication & accounts with secure bcrypt encryption and Redux-managed state.',
         'Dynamic content through an Express-powered RESTful API with modular route handlers.',

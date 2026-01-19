@@ -13,15 +13,10 @@ export default function TattGPT() {
     <Project
       name="TattGPT"
       repo="https://github.com/rohandrummond/tattgpt"
-      stack={{
-        'Front-end': 'Angular',
-        API: '.NET',
-        Database: 'Supabase',
-        LLM: 'GPT & DALL·E 3',
-      }}
-      description="TattGPT is a full-stack web app that generates personalised tattoo ideas using AI, without the fuss of constant prompt engineering. Built with an Angular front-end and .NET web API, it integrates with Supabase (PostgreSQL) for storage and OpenAI for concept and image generation."
-      badges={['TypeScript', 'C#', 'PostgreSQL', 'GPT', 'DALL·E 3']}
-      features={[
+      firstParagraph="TattGPT is a full-stack web app that generates personalised tattoo ideas using AI, without the fuss of constant prompt engineering. Built with an Angular front-end and .NET web API, it integrates with Supabase (PostgreSQL) for storage and OpenAI for concept and image generation."
+      secondParagraph="TattGPT is a full-stack web app that generates personalised tattoo ideas using AI, without the fuss of constant prompt engineering. Built with an Angular front-end and .NET web API, it integrates with Supabase (PostgreSQL) for storage and OpenAI for concept and image generation."
+      badges={['.NET', 'Angular', 'PostgreSQL', 'GPT', 'DALL·E 3']}
+      highlights={[
         'AI generation of tattoo concepts (GPT-5 Mini) and custom images (DALL·E 3) via a .NET API.',
         'Personalised idea capture through an Angular Reactive Form for style, size, and placement preferences.',
         'Dynamic results display powered by structured JSON responses from the backend.',
