@@ -53,7 +53,7 @@ export default function Work() {
         <ProjectCard
           name="Arbie Abroad"
           stack={['React', 'Express', 'MongoDB']}
-          blurb="My first self directed project, a micro CMS for sharing travel memories with family and friends. Built to cement learning from on an online bootcamp I had completed."
+          blurb="My first self directed project, a micro CMS for sharing travel memories with family and friends. Built to cement learning from on an online bootcamp from London's App Brewery."
           href="/work/arbie-abroad"
           image={{
             data: arbieAbroadImage,

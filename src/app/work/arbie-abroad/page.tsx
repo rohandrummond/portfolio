@@ -13,15 +13,14 @@ export default function ArbieAbroad() {
     <Project
       name="Arbie Abroad"
       repo="https://github.com/rohandrummond/arbie-abroad"
-      firstParagraph="Arbie Abroad is a full-stack travel blog app I built as a lightweight and convenient way for sharing and preserving my travel memories. It features a React front end and an Express API, with posts, images, and user data stored in MongoDB,."
-      secondParagraph="Arbie Abroad is a full-stack travel blog app I built as a lightweight and convenient way for sharing and preserving my travel memories. It features a React front end and an Express API, with posts, images, and user data stored in MongoDB,."
-      badges={['JavaScript', 'Node.js', 'NoSQL']}
+      firstParagraph="Arbie Abroad is a full stack travel blog I built to share my and my partner's travels with family and friends. It includes an interactive world map, blog posts with image uploads, a commenting system, and an admin dashboard for managing content."
+      secondParagraph="While I had worked with React, Express and MongoDB before, this was my first time pulling everything together in a single app without following a tutorial. I learnt to implement local auth from scratch, work with Redux for state management, and Multer and GridFS for file handling."
+      badges={['React', 'Express', 'MongoDB']}
       highlights={[
-        'Interactive world map built with React Simple Maps for exploring travel posts.',
-        'User authentication & accounts with secure bcrypt encryption and Redux-managed state.',
-        'Dynamic content through an Express-powered RESTful API with modular route handlers.',
-        'MongoDB data layer with dedicated collections for users, posts, comments, and image storage via GridFS.',
-        'Admin tools for creating posts, managing users, and moderating content.',
+        'Local authentication: User registration and login with bcrypt password hashing and express-session for session management',
+        'Redux state management: Auth state managed via Redux Toolkit and persisted to localStorage, enabling protected routes and conditional rendering based on user type',
+        'Image uploads: Express API uses Multer to handle multipart form data, which is chunked and stored using MongoDB GridFS',
+        'Interactive world map: React Simple Maps renders countries, highlights those with blog posts, and navigates users to content',
       ]}
       images={[
         {
