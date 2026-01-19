@@ -13,7 +13,7 @@ export default function Mithrandir() {
       repo="https://github.com/rohandrummond/mithrandir"
       demo="https://mithrandir-rho.vercel.app/"
       firstParagraph="Mithrandir is an API management service that handles authentication, IP whitelisting, and rate limiting. It's built around a .NET MVC API that uses PostgreSQL for storing API keys, Redis for rate limiting and a Next.js dashboard for interacting with the service via a browser."
-      secondParagraph="After completing Dev Academy's TypeScript focused curriculum, I wanted to dive back into the .NET ecosystem, and learn more about using middleware to process API requests. It was also a great opportunity to get some practical experience with AWS, Docker, Terraform and GitHub Actions CI/CD piplines."
+      secondParagraph="After completing Dev Academy's TypeScript focused curriculum, I wanted to dive back into the .NET ecosystem, and learn more about using middleware to process API requests. It was also a great opportunity to get some practical experience with AWS, Docker, Terraform and GitHub Actions CI/CD pipelines."
       badges={['.NET', 'Next.js', 'PostgreSQL', 'Redis']}
       highlights={[
         'Custom Middleware Pipeline: Requests processed through logging, authentication and rate limiting layers before reaching controllers',

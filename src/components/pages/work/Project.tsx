@@ -51,13 +51,6 @@ export default function Project({
           </video>
         </section>
         <section className="flex flex-col justify-between items-start gap-8">
-          {/* <div className="flex flex-col">
-            {Object.keys(stack).map((key, index) => (
-              <h2 key={index} className="body-lg">
-                {key}: {stack[key]}
-              </h2>
-            ))}
-          </div> */}
           <div className="flex flex-col gap-6">
             <p className="body w-[90%]">{firstParagraph}</p>
             <p className="body w-[90%]">{secondParagraph}</p>
@@ -78,7 +71,7 @@ export default function Project({
                   <a
                     href={demo}
                     target="_blank"
-                    className="flex f-row items-center gap-3"
+                    className="flex flex-row items-center gap-3"
                   >
                     <p className="body">Demo</p>
                     <ExternalLinkIcon />
@@ -100,7 +93,7 @@ export default function Project({
                 <a
                   href={repo}
                   target="_blank"
-                  className="flex f-row items-center gap-3"
+                  className="flex flex-row items-center gap-3"
                 >
                   <p className="body">GitHub</p>
                   <ExternalLinkIcon />

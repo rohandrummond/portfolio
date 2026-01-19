@@ -12,8 +12,7 @@ export default function TipTapToe() {
       name="Tip Tap Toe"
       repo="https://github.com/rohandrummond/tiptaptoe"
       firstParagraph="Tip Tap Toe is a typing practice console app designed specifically for devs. It uses a custom API integration with Google's Gemini model to generate language specific code sequences, and analyses your keystroke patterns to create personalised practice exercises that target your weak points."
-      secondParagraph="The project quickly became a great chance to learn more about C#, and a crash course in working with structured data. It let me explore making HTTP requests, real time keystroke capture and enforcing structured JSON output from LLMs.
-"
+      secondParagraph="The project quickly became a great chance to learn more about C#, and a crash course in working with structured data. It let me explore making HTTP requests, real time keystroke capture and enforcing structured JSON output from LLMs."
       badges={['.NET', 'Gemini']}
       highlights={[
         'Structured AI output: Custom Gemini API integration with enforced structured outputs and deserialisation',
