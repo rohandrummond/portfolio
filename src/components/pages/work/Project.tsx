@@ -2,11 +2,10 @@
 
 import Image, { StaticImageData } from 'next/image'
 import { Card } from '@/components/ui/card'
-import { Button } from '@/components/ui/button'
 import ProjectBadge from '@/components/pages/work/ProjectBadge'
+import ProjectLinkButton from '@/components/pages/work/ProjectLinkButton'
 import PageEndOptions from '@/components/common/PageEndOptions'
 import { ExternalLinkIcon, ArrowRightIcon } from '@radix-ui/react-icons'
-import { motion } from 'motion/react'
 
 type ImageItem = {
   data: StaticImageData
@@ -57,49 +56,17 @@ export default function Project({
           </div>
           <div className="flex flex-row gap-4">
             {demo && (
-              <motion.div
-                whileHover={{
-                  scale: 1.025,
-                  transition: { duration: 0.2 },
-                }}
-                transition={{ duration: 0.1 }}
-              >
-                <Button
-                  className="border rounded-lg hover:bg-background !py-5 !px-4 md:!py-6 md:!px-5"
-                  asChild
-                >
-                  <a
-                    href={demo}
-                    target="_blank"
-                    className="flex flex-row items-center gap-3"
-                  >
-                    <p className="body">Demo</p>
-                    <ExternalLinkIcon />
-                  </a>
-                </Button>
-              </motion.div>
+              <ProjectLinkButton
+                href={demo}
+                text="Demo"
+                icon={ExternalLinkIcon}
+              />
             )}
-            <motion.div
-              whileHover={{
-                scale: 1.025,
-                transition: { duration: 0.2 },
-              }}
-              transition={{ duration: 0.1 }}
-            >
-              <Button
-                className="border rounded-lg hover:bg-background !py-5 !px-4 md:!py-6 md:!px-5"
-                asChild
-              >
-                <a
-                  href={repo}
-                  target="_blank"
-                  className="flex flex-row items-center gap-3"
-                >
-                  <p className="body">GitHub</p>
-                  <ExternalLinkIcon />
-                </a>
-              </Button>
-            </motion.div>
+            <ProjectLinkButton
+              href={repo}
+              text="GitHub"
+              icon={ExternalLinkIcon}
+            />
           </div>
         </section>
         <section>
