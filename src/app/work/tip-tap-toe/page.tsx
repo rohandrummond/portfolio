@@ -18,7 +18,7 @@ export default function TipTapToe() {
         'Structured AI output: Custom Gemini API integration with enforced structured outputs and deserialisation',
         'Real time keystroke analytics: Stopwatch instance captures keystroke timestamps and accuracy, enabling analysis of slow transitions and error patterns',
         'Personalised practice: Keystroke JSON data to Gemini, which analyses typing patterns and generates targeted practice sequences',
-        'Modern C# Patterns: Leverages C# 12 features like primary constructors and collection expressions',
+        'Modern C# patterns: Leverages C# 12 features like primary constructors and collection expressions',
       ]}
       videoSrc="/videos/tip-tap-toe-demo.mp4"
     />

@@ -18,7 +18,7 @@ export default function ArbieAbroad() {
       badges={['React', 'Express', 'MongoDB']}
       highlights={[
         'Local authentication: User registration and login with bcrypt password hashing and express-session for session management',
-        'Redux state management: Auth state managed via Redux Toolkit and persisted to localStorage, enabling protected routes and conditional rendering based on user type',
+        'Redux state management: Auth state managed via Redux Toolkit and persisted to localStorage, facilitaing protected routes and conditional rendering based on user role',
         'Image uploads: Express API uses Multer to handle multipart form data, which is chunked and stored using MongoDB GridFS',
         'Interactive world map: React Simple Maps renders countries, highlights those with blog posts, and navigates users to content',
       ]}

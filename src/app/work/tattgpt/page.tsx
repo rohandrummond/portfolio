@@ -17,9 +17,9 @@ export default function TattGPT() {
       secondParagraph="Having primarily worked with React and JavaScript at this point, I built TattGPT to experiment with Angular, .NET, and TypeScript. It also gave me hands on experience integrating with OpenAI's API, particularly the DALL·E 3 model for image generation, something I hadn't done before."
       badges={['.NET', 'Angular', 'PostgreSQL', 'GPT', 'DALL·E 3']}
       highlights={[
-        "AI Integration: Utilises OpenAI's GPT model for generating creative tattoo concepts and DALL·E 3 for visual designs based on user preferences like style and size",
-        '.NET Web API: Lightweight web API for handling OpenAI integration and PostgreSQL database operations via Supabase',
-        'Angular Frontend: Custom frontend (no CSS libraries) with Angular reactive forms and RxJS state management',
+        "AI integration: Utilises OpenAI's GPT model for generating creative tattoo concepts and DALL·E 3 for visual designs based on user preferences like style and size",
+        '.NET web API: Lightweight web API for handling OpenAI integration and PostgreSQL database operations via Supabase',
+        'Angular frontend: Custom frontend (no CSS libraries) with Angular reactive forms and RxJS state management',
         'Authentication: Client-side auth powered by Supabase with Google OAuth integration and 401 error handling',
       ]}
       images={[
