@@ -13,15 +13,14 @@ export default function TattGPT() {
     <Project
       name="TattGPT"
       repo="https://github.com/rohandrummond/tattgpt"
-      firstParagraph="TattGPT is a full-stack web app that generates personalised tattoo ideas using AI, without the fuss of constant prompt engineering. Built with an Angular front-end and .NET web API, it integrates with Supabase (PostgreSQL) for storage and OpenAI for concept and image generation."
-      secondParagraph="TattGPT is a full-stack web app that generates personalised tattoo ideas using AI, without the fuss of constant prompt engineering. Built with an Angular front-end and .NET web API, it integrates with Supabase (PostgreSQL) for storage and OpenAI for concept and image generation."
+      firstParagraph="TattGPT is a web app that generates personalised tattoo ideas using AI. It's built on an Angular frontend, .NET web API, Supabase (PostgreSQL) for storage and authentication, and OpenAI's GPT and DALL·E 3 models."
+      secondParagraph="I built TattGPT so I could experiment with Angular, and build a real web app using .NET. It was a good chance for me to practice interacting with AI models via an API, specifically image generation which I hadn't done before."
       badges={['.NET', 'Angular', 'PostgreSQL', 'GPT', 'DALL·E 3']}
       highlights={[
-        'AI generation of tattoo concepts (GPT-5 Mini) and custom images (DALL·E 3) via a .NET API.',
-        'Personalised idea capture through an Angular Reactive Form for style, size, and placement preferences.',
-        'Dynamic results display powered by structured JSON responses from the backend.',
-        'User authentication and collections with Supabase (including Google OAuth) for saving and managing designs.',
-        'Modern architecture with a clean .NET Web API, separating models, services, and data handling in PostgreSQL.',
+        "AI Integration: Utilises OpenAI's GPT model for generating creative tattoo concepts and DALL·E 3 for visual designs based on user preferences like style and size",
+        '.NET Web API: Lightweight web APIs for handling OpenAI integration and PostgreSQL database operations via Supabase',
+        'Angular Frontend: Custom frontend (no CSS libraries) with Angular reactive forms and RxJS state management',
+        'Authentication: Client-side auth powered by Supabase with Google OAuth integration and 401 error handling',
       ]}
       images={[
         {

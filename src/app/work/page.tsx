@@ -33,7 +33,7 @@ export default function Work() {
         <ProjectCard
           name="TattGPT"
           stack={['.NET', 'Angular', 'PostgreSQL', 'OpenAI']}
-          blurb="An AI powered tattoo idea generator. A project for learning about .NET web APIs, Angular, rate limiting and OpenAI's image and text generation models."
+          blurb="An AI powered tattoo idea generator. A project for learning about .NET web APIs, Angular and OpenAI's GPT and DALL·E 3 models for text and image generation."
           href="/work/tattgpt"
           image={{
             data: tattgptImage,
