@@ -2,11 +2,10 @@
 
 import Image, { StaticImageData } from 'next/image'
 import { Card } from '@/components/ui/card'
-import { Button } from '@/components/ui/button'
 import ProjectBadge from '@/components/pages/work/ProjectBadge'
+import ProjectLinkButton from '@/components/pages/work/ProjectLinkButton'
 import PageEndOptions from '@/components/common/PageEndOptions'
-import { ExternalLinkIcon } from '@radix-ui/react-icons'
-import { motion } from 'motion/react'
+import { ExternalLinkIcon, ArrowRightIcon } from '@radix-ui/react-icons'
 
 type ImageItem = {
   data: StaticImageData
@@ -16,21 +15,21 @@ type ImageItem = {
 export default function Project({
   name,
   repo,
-  stack,
-  description,
+  demo,
+  firstParagraph,
+  secondParagraph,
   badges,
-  features,
+  highlights,
   images,
   videoSrc,
 }: {
   name: string
   repo: string
-  stack: {
-    [key: string]: string
-  }
-  description: string
+  demo?: string
+  firstParagraph: string
+  secondParagraph: string
   badges: string[]
-  features: string[]
+  highlights: string[]
   images?: ImageItem[]
   videoSrc: string
 }) {
@@ -51,42 +50,33 @@ export default function Project({
           </video>
         </section>
         <section className="flex flex-col justify-between items-start gap-8">
-          <div className="flex flex-col">
-            {Object.keys(stack).map((key, index) => (
-              <h2 key={index} className="body-lg">
-                {key}: {stack[key]}
-              </h2>
-            ))}
+          <div className="flex flex-col gap-6">
+            <p className="body w-[90%]">{firstParagraph}</p>
+            <p className="body w-[90%]">{secondParagraph}</p>
           </div>
-          <p className="body w-[90%]">{description}</p>
-          <motion.div
-            whileHover={{
-              scale: 1.025,
-              transition: { duration: 0.2 },
-            }}
-            transition={{ duration: 0.1 }}
-          >
-            <Button
-              className="border rounded-lg hover:bg-background !py-5 !px-4 md:!py-6 md:!px-5"
-              asChild
-            >
-              <a
-                href={repo}
-                target="_blank"
-                className="flex f-row items-center gap-3"
-              >
-                <p className="body">GitHub</p>
-                <ExternalLinkIcon />
-              </a>
-            </Button>
-          </motion.div>
+          <div className="flex flex-row gap-4">
+            {demo && (
+              <ProjectLinkButton
+                href={demo}
+                text="Demo"
+                icon={ExternalLinkIcon}
+              />
+            )}
+            <ProjectLinkButton
+              href={repo}
+              text="GitHub"
+              icon={ExternalLinkIcon}
+            />
+          </div>
         </section>
         <section>
-          <Card className="flex flex-col justify-center rounded-lg p-6 md:p-8">
+          <Card className="flex flex-col justify-center rounded-xl p-6 md:p-8">
             <div className="flex flex-col gap-6">
-              <h2 className="body-lg">Key features</h2>
+              <h2 className="flex flex-row items-center body-lg gap-2">
+                Project Highlights <ArrowRightIcon />
+              </h2>
               <ul className="flex flex-col gap-2 list-disc list-inside">
-                {features.map((value, index) => (
+                {highlights.map((value, index) => (
                   <li
                     key={index}
                     className="body before:content-[''] before:ml-[-12]"
