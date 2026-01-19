@@ -1,33 +1,34 @@
-# Rohan Drummond Portfolio 🥸
+# Portfolio 🥸
 
-Personal portfolio and developer profile built with Next.js.
+🔗 [rohandrummond.co.nz](https://www.rohandrummond.co.nz)
 
-Currently deployed using AWS Amplify (with CI/CD from GitHub) and Amazon Route 53 for domain and DNS management. Check it out at [rohandrummond.co.nz](https://www.rohandrummond.co.nz).
+**About the project**
 
-## Tech Stack 👷
+A personal website for showcasing my projects, skills and experience as a software developer. Includes custom page transitions, interactive UI elements and detailed breakdowns of my personal projects.
+
+**Why I built it**
+
+I had been wanting to build a portfolio website for a while and decided to go with Next.js. Compared to vanilla React, I really enjoyed the structure and conventions that Next.js provides, particularly its built-in routing via the App Router.
+
+It was a great way to dip my toes into the Next.js world with a relatively simple project, without having to worry about databases and fetching. From here I'm going to move onto implementing Next.js in a more complex application, where I can get stuck into SSR and all of its complexities.
+
+## Tech stack ⚙️
+
+**Frontend**
 
 - Next.js
 - Tailwind CSS
-- shadcn
 - Motion
+- shadcn
+
+**Infrastructure**
+
 - AWS Amplify
 - Amazon Route 53
 
-## Features 🚀
+## Deployment ☁️
 
-- Custom page transition animation
-- Interactive magnetic image on Home page
-- Shadcn scroll area and accordion implementation on About page
-- Work page showcasing projects using custom card component
-- Individual project pages with embedded video demos
-- Contact page with social links and custom emaill copy tooltip
-- Entrance and hover animations powered by Motion
-- Custom 404 error page
+Hosted on AWS Amplify with automatic deployments triggered by pushes to the main branch on GitHub.
 
-## License 👨‍⚖️
-
-This project is open source under the MIT License.
-
-## Contact 📫
-
-Check out my other projects and contact info on my [GitHub](https://github.com/rohandrummond) profile.
+- Amplify handles build, deploy, and CDN distribution
+- Route 53 manages the custom domain and DNS routing
