@@ -1,5 +1,5 @@
-@import "tailwindcss";
-@import "tw-animate-css";
+@import 'tailwindcss';
+@import 'tw-animate-css';
 
 @custom-variant dark (&:is(.dark *));
 
@@ -41,17 +41,16 @@
   --radius-xl: calc(var(--radius) + 4px);
 }
 
-
 :root {
   --radius: 0.625rem;
-  --background: #0D0D0D;
-  --foreground: #E1E1E1;
+  --background: #0d0d0d;
+  --foreground: #e1e1e1;
   --card: #171717;
-  --card-foreground: #E1E1E1;
+  --card-foreground: #e1e1e1;
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.145 0 0);
   --primary: #171717;
-  --primary-foreground: #E1E1E1;
+  --primary-foreground: #e1e1e1;
   --secondary: oklch(0.97 0 0);
   --secondary-foreground: oklch(0.205 0 0);
   --muted: oklch(0.97 0 0);
@@ -59,7 +58,7 @@
   --accent: oklch(0.97 0 0);
   --accent-foreground: oklch(0.205 0 0);
   --destructive: oklch(0.577 0.245 27.325);
-  --border: #3B3B3B;
+  --border: #3b3b3b;
   --input: oklch(0.922 0 0);
   --ring: oklch(0.708 0 0);
   --chart-1: oklch(0.646 0.222 41.116);
@@ -78,14 +77,14 @@
 }
 
 .dark {
-  --background: #0D0D0D;
-  --foreground: #E1E1E1;
+  --background: #0d0d0d;
+  --foreground: #e1e1e1;
   --card: #171717;
-  --card-foreground: #E1E1E1;
+  --card-foreground: #e1e1e1;
   --popover: oklch(0.205 0 0);
   --popover-foreground: oklch(0.985 0 0);
   --primary: #171717;
-  --primary-foreground: #E1E1E1;
+  --primary-foreground: #e1e1e1;
   --secondary: oklch(0.269 0 0);
   --secondary-foreground: oklch(0.985 0 0);
   --muted: oklch(0.269 0 0);
@@ -93,7 +92,7 @@
   --accent: oklch(0.269 0 0);
   --accent-foreground: oklch(0.985 0 0);
   --destructive: oklch(0.704 0.191 22.216);
-  --border: #3B3B3B;
+  --border: #3b3b3b;
   --input: oklch(1 0 0 / 15%);
   --ring: oklch(0.556 0 0);
   --chart-1: oklch(0.488 0.243 264.376);
@@ -138,15 +137,15 @@ body {
   letter-spacing: normal;
 }
 
-@media(min-width: 768px) {
+@media (min-width: 768px) {
   .heading-lg {
-    font-size: 3rem
+    font-size: 3rem;
   }
 }
 
-@media(min-width: 1024px) {
+@media (min-width: 1024px) {
   .heading-lg {
-    font-size: 4rem
+    font-size: 4rem;
   }
 }
 
@@ -171,15 +170,15 @@ body {
   letter-spacing: normal;
 }
 
-@media(min-width: 768px) {
+@media (min-width: 768px) {
   .body {
-    font-size: 1.1rem
+    font-size: 1.1rem;
   }
 }
 
-@media(min-width: 1024px) {
+@media (min-width: 1024px) {
   .body {
-    font-size: 1.2rem
+    font-size: 1.2rem;
   }
 }
 
@@ -188,10 +187,4 @@ body {
   font-weight: 400;
   line-height: 1.4;
   letter-spacing: normal;
-}
-
-.header-scroll {
-  background-color: var(--color-card);
-  border-bottom: 0.5px var(--color-border) solid;
-  transition: background-color 0.1s ease, border-bottom 0.1s ease;
 }
