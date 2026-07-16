@@ -12,6 +12,7 @@ export default function Header() {
         <motion.a
           href="https://github.com/rohandrummond"
           target="_blank"
+          rel="noopener noreferrer"
           aria-label="Rohan Drummond on GitHub"
           className="opacity-80"
           whileHover={{ scale: 1.15, opacity: 1 }}
@@ -23,6 +24,7 @@ export default function Header() {
         <motion.a
           href="https://www.linkedin.com/in/drummondr/"
           target="_blank"
+          rel="noopener noreferrer"
           aria-label="Rohan Drummond on LinkedIn"
           className="opacity-80"
           whileHover={{ scale: 1.15, opacity: 1 }}

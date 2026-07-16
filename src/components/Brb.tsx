@@ -25,6 +25,7 @@ function BrbMessage() {
         src={face}
         alt="Cartoon illustration of Rohan Drummond"
         className="relative w-auto h-[2.5rem] pointer-events-none"
+        priority
       />
     </motion.div>
   )
