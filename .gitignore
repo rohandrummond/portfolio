@@ -43,3 +43,8 @@ next-env.d.ts
 # Claude
 CLAUDE.md
 PLAN.md
+# local agent tooling
+.agents/
+.claude/
+.junie/
+skills-lock.json
