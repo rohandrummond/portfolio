@@ -2,15 +2,9 @@
 
 🔗 [rohandrummond.co.nz](https://www.rohandrummond.co.nz)
 
-**About the project**
+**Currently being rebuilt**
 
-A personal website for showcasing my projects, skills and experience as a software developer. Includes custom page transitions, interactive UI elements and detailed breakdowns of my personal projects.
-
-**Why I built it**
-
-I had been wanting to build a portfolio website for a while and decided to go with Next.js. Compared to vanilla React, I really enjoyed the structure and conventions that Next.js provides, particularly its built-in routing via the App Router.
-
-It was a great way to dip my toes into the Next.js world with a relatively simple project, without having to worry about databases and fetching. From here I'm going to move onto implementing Next.js in a more complex application, where I can get stuck into SSR and all of its complexities.
+The site is temporarily a placeholder while I rebuild my portfolio from the ground up. The previous version remains fully intact on the [`archive`](https://github.com/rohandrummond/portfolio/tree/archive) branch.
 
 ## Tech stack ⚙️
 

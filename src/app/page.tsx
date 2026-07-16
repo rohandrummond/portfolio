@@ -1,5 +1,5 @@
-import HomeHero from '@/components/pages/home/HomeHero'
+import Brb from '@/components/Brb'
 
 export default function Home() {
-  return <HomeHero />
+  return <Brb />
 }
